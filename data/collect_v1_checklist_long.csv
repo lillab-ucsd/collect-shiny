@@ -1,0 +1,1178 @@
+participant_id,gender_clean,age_num,age_bin,clean_item_name,checklist_value
+R_1M5v1KCbmHPvCCs,boy,3,3 to 4,animal figurines,animal figurines
+R_1M5v1KCbmHPvCCs,boy,3,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_1M5v1KCbmHPvCCs,boy,3,3 to 4,action figures,action figures
+R_1M5v1KCbmHPvCCs,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1M5v1KCbmHPvCCs,boy,3,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1Quf1pQ0TxxkDyO,girl,6,5 to 6,dolls,dolls
+R_1Quf1pQ0TxxkDyO,girl,6,5 to 6,stuffed animals,stuffed animals
+R_1Quf1pQ0TxxkDyO,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1Quf1pQ0TxxkDyO,girl,6,5 to 6,posters,posters
+R_2TvfAZQArjyTFRi,girl,11,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2TvfAZQArjyTFRi,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2TvfAZQArjyTFRi,girl,11,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,dolls,dolls
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,animal figurines,animal figurines
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,stuffed animals,stuffed animals
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,action figures,action figures
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_1Eaqc2KrjG3cuzm,girl,3,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1H026a5WimiL8SA,girl,5,5 to 6,stuffed animals,stuffed animals
+R_1H026a5WimiL8SA,girl,5,5 to 6,food,"food / perishables (e.g., specific kinds of candy)"
+R_1H026a5WimiL8SA,girl,5,5 to 6,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_1H026a5WimiL8SA,girl,5,5 to 6,sticks,sticks
+R_1H026a5WimiL8SA,girl,5,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_1H026a5WimiL8SA,girl,5,5 to 6,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_1H026a5WimiL8SA,girl,5,5 to 6,postcards,postcards
+R_DBQBDvsBUs39MbL,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_DBQBDvsBUs39MbL,boy,5,5 to 6,sticks,sticks
+R_2V2zzTFFDhcIwFR,boy,8,7 to 8,coins,coins / money
+R_2V2zzTFFDhcIwFR,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2V2zzTFFDhcIwFR,boy,8,7 to 8,sticks,sticks
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,stuffed animals,stuffed animals
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,action figures,action figures
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3QYlzgkKi2PPAGz,boy,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2wnO54gEUvkpp4u,girl,8,7 to 8,stuffed animals,stuffed animals
+R_2wnO54gEUvkpp4u,girl,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2wnO54gEUvkpp4u,girl,8,7 to 8,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2wnO54gEUvkpp4u,girl,8,7 to 8,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2wnO54gEUvkpp4u,girl,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3jeCm1wOAvkub9U,girl,5,5 to 6,stuffed animals,stuffed animals
+R_3jeCm1wOAvkub9U,girl,5,5 to 6,food,"food / perishables (e.g., specific kinds of candy)"
+R_0H9YBRPUcpmB69z,girl,8,7 to 8,food,"food / perishables (e.g., specific kinds of candy)"
+R_0H9YBRPUcpmB69z,girl,8,7 to 8,coins,coins / money
+R_0H9YBRPUcpmB69z,girl,8,7 to 8,magazines,magazines/ newspapers
+R_0H9YBRPUcpmB69z,girl,8,7 to 8,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,balls,"balls (if yes, enter the specific types of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,coins,coins / money
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,sticks,sticks
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,marbles,marbles
+R_UFt6i8AykLzFAEV,boy,9,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_325WZnGedrAdtZg,girl,3,3 to 4,animal figurines,animal figurines
+R_325WZnGedrAdtZg,girl,3,3 to 4,stuffed animals,stuffed animals
+R_325WZnGedrAdtZg,girl,3,3 to 4,food,"food / perishables (e.g., specific kinds of candy)"
+R_325WZnGedrAdtZg,girl,3,3 to 4,shells,shells
+R_325WZnGedrAdtZg,girl,3,3 to 4,bugs,bugs
+R_325WZnGedrAdtZg,girl,3,3 to 4,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_2xRlLDDBaxeuv8o,boy,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2xRlLDDBaxeuv8o,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2xRlLDDBaxeuv8o,boy,6,5 to 6,shells,shells
+R_3CZBqZDTYmfJWYo,girl,8,7 to 8,stuffed animals,stuffed animals
+R_3CZBqZDTYmfJWYo,girl,8,7 to 8,coins,coins / money
+R_3CZBqZDTYmfJWYo,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3CZBqZDTYmfJWYo,girl,8,7 to 8,shells,shells
+R_3gOt9rCsE5U0fn1,boy,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3qTM7q9DQYWfQ8G,boy,4,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_3qTM7q9DQYWfQ8G,boy,4,3 to 4,coins,coins / money
+R_3qTM7q9DQYWfQ8G,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3qTM7q9DQYWfQ8G,boy,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3iX6tgBnRP1cCnH,boy,6,5 to 6,coins,coins / money
+R_3iX6tgBnRP1cCnH,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3iX6tgBnRP1cCnH,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3iX6tgBnRP1cCnH,boy,6,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3MbTCJj5hWaoVJ9,girl,7,7 to 8,dolls,dolls
+R_3MbTCJj5hWaoVJ9,girl,7,7 to 8,stuffed animals,stuffed animals
+R_3MbTCJj5hWaoVJ9,girl,7,7 to 8,goo,goo / slime
+R_3MbTCJj5hWaoVJ9,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3MbTCJj5hWaoVJ9,girl,7,7 to 8,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_022mqADYq2lfOj7,girl,4,3 to 4,coins,coins / money
+R_022mqADYq2lfOj7,girl,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_022mqADYq2lfOj7,girl,4,3 to 4,shells,shells
+R_022mqADYq2lfOj7,girl,4,3 to 4,sticks,sticks
+R_022mqADYq2lfOj7,girl,4,3 to 4,flowers,flowers / petals
+R_022mqADYq2lfOj7,girl,4,3 to 4,feathers,feathers
+R_022mqADYq2lfOj7,girl,4,3 to 4,moss,moss
+R_022mqADYq2lfOj7,girl,4,3 to 4,leaves,leaves
+R_022mqADYq2lfOj7,girl,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2YFCfK6ySsmrAqW,boy,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2YFCfK6ySsmrAqW,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2YFCfK6ySsmrAqW,boy,8,7 to 8,sticks,sticks
+R_b1kJAYOqyfdrQcN,girl,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,dolls,dolls
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,animal figurines,animal figurines
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,stuffed animals,stuffed animals
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,balls,"balls (if yes, enter the specific types of objects below)"
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,shells,shells
+R_3NQIqdPrtZiGiIh,girl,11,11 to 12,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_24l3h2kNRZgJv6f,girl,3,3 to 4,dolls,dolls
+R_24l3h2kNRZgJv6f,girl,3,3 to 4,animal figurines,animal figurines
+R_24l3h2kNRZgJv6f,girl,3,3 to 4,stuffed animals,stuffed animals
+R_24l3h2kNRZgJv6f,girl,3,3 to 4,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_24l3h2kNRZgJv6f,girl,3,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,shells,shells
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,sticks,sticks
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,flowers,flowers / petals
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1Fb1x7GHguRJDxH,boy,5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,dolls,dolls
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,animal figurines,animal figurines
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,stuffed animals,stuffed animals
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,coins,coins / money
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,sticks,sticks
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,flowers,flowers / petals
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,leaves,leaves
+R_2CCAz0uLcKSX9sg,girl,4,3 to 4,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,animal figurines,animal figurines
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,stuffed animals,stuffed animals
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,coins,coins / money
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,sticks,sticks
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2sXr2ILoflwBOqv,boy,7,7 to 8,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,dolls,dolls
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,stuffed animals,stuffed animals
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,shells,shells
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,bugs,bugs
+R_2SJ4nSzaZUByOKh,girl,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2PqiWGmevaCSUei,boy,9,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,dolls,dolls
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,stuffed animals,stuffed animals
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,coins,coins / money
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,goo,goo / slime
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,photos,photos / pictures
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_xhFvhLrz8zbuhXj,girl,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_Tc1TAzVulvenZVT,boy,4,3 to 4,animal figurines,animal figurines
+R_Tc1TAzVulvenZVT,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_Tc1TAzVulvenZVT,boy,4,3 to 4,sticks,sticks
+R_Tc1TAzVulvenZVT,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_Tc1TAzVulvenZVT,boy,4,3 to 4,leaves,leaves
+R_3G7icsiP6pASJbj,girl,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3G7icsiP6pASJbj,girl,9,9 to 10,stuffed animals,stuffed animals
+R_3G7icsiP6pASJbj,girl,9,9 to 10,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_3G7icsiP6pASJbj,girl,9,9 to 10,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3G7icsiP6pASJbj,girl,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3G7icsiP6pASJbj,girl,9,9 to 10,feathers,feathers
+R_3G7icsiP6pASJbj,girl,9,9 to 10,moss,moss
+R_3G7icsiP6pASJbj,girl,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3G7icsiP6pASJbj,girl,9,9 to 10,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_33qh0vFa04tKTs2,girl,4,3 to 4,shells,shells
+R_33qh0vFa04tKTs2,girl,4,3 to 4,sticks,sticks
+R_33qh0vFa04tKTs2,girl,4,3 to 4,flowers,flowers / petals
+R_33qh0vFa04tKTs2,girl,4,3 to 4,leaves,leaves
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,animal figurines,animal figurines
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,stuffed animals,stuffed animals
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,sticks,sticks
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,flowers,flowers / petals
+R_3lMOS6xCfNe0j4k,girl,3.5,3 to 4,leaves,leaves
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,stamps,stamps
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,animal figurines,animal figurines
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,coins,coins / money
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,sticks,sticks
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,leaves,leaves
+R_AzYWVoX4xhrPuo1,boy,8,7 to 8,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_tQfwRH2iUJMobUB,girl,10,9 to 10,stuffed animals,stuffed animals
+R_tQfwRH2iUJMobUB,girl,10,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_tQfwRH2iUJMobUB,girl,10,9 to 10,coins,coins / money
+R_tQfwRH2iUJMobUB,girl,10,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_tQfwRH2iUJMobUB,girl,10,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_6L3AB6bHjQUUoaR,girl,7,7 to 8,stuffed animals,stuffed animals
+R_6L3AB6bHjQUUoaR,girl,7,7 to 8,coins,coins / money
+R_6L3AB6bHjQUUoaR,girl,7,7 to 8,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_6L3AB6bHjQUUoaR,girl,7,7 to 8,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3fDW1vH9WZjsAya,girl,12,11 to 12,coins,coins / money
+R_3fDW1vH9WZjsAya,girl,12,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3fDW1vH9WZjsAya,girl,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,dolls,dolls
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,animal figurines,animal figurines
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,stuffed animals,stuffed animals
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,goo,goo / slime
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,shells,shells
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3KuT9TSAumB3HkH,girl,3,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,dolls,dolls
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,stuffed animals,stuffed animals
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,goo,goo / slime
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,shells,shells
+R_3PtTFUW1YmFO6Ae,girl,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,stuffed animals,stuffed animals
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,photos,photos / pictures
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,shells,shells
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,sticks,sticks
+R_PujTaLV9BCD4TT3,boy,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,stuffed animals,stuffed animals
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,photos,photos / pictures
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,shells,shells
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_6Ay9ct2IFaqLMvn,girl,12,11 to 12,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,animal figurines,animal figurines
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,stuffed animals,stuffed animals
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,coins,coins / money
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,shells,shells
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,flowers,flowers / petals
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3isYwxrgBqa35Uw,girl,6.5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,stuffed animals,stuffed animals
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,balls,"balls (if yes, enter the specific types of objects below)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2ysbScXfxziCVFp,boy,6.5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,food,"food / perishables (e.g., specific kinds of candy)"
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,coins,coins / money
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,leaves,leaves
+R_2tr2EtMFfnPdlbd,girl,5,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_31TNn55T6mEhgdW,girl,3,3 to 4,dolls,dolls
+R_31TNn55T6mEhgdW,girl,3,3 to 4,photos,photos / pictures
+R_2rPaVNubt712q2c,girl,3,3 to 4,dolls,dolls
+R_2rPaVNubt712q2c,girl,3,3 to 4,animal figurines,animal figurines
+R_2rPaVNubt712q2c,girl,3,3 to 4,stuffed animals,stuffed animals
+R_2rPaVNubt712q2c,girl,3,3 to 4,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_2rPaVNubt712q2c,girl,3,3 to 4,food,"food / perishables (e.g., specific kinds of candy)"
+R_2rPaVNubt712q2c,girl,3,3 to 4,goo,goo / slime
+R_2rPaVNubt712q2c,girl,3,3 to 4,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2rPaVNubt712q2c,girl,3,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1LpWvUJEznuFTQu,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2dj3KnJSMG1XahD,girl,4,3 to 4,stuffed animals,stuffed animals
+R_2dj3KnJSMG1XahD,girl,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2dj3KnJSMG1XahD,girl,4,3 to 4,flowers,flowers / petals
+R_2dj3KnJSMG1XahD,girl,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2dj3KnJSMG1XahD,girl,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,coins,coins / money
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,photos,photos / pictures
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1LUNDTjp6v4WjkR,boy,10,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,animal figurines,animal figurines
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,stuffed animals,stuffed animals
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,balls,"balls (if yes, enter the specific types of objects below)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,coins,coins / money
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_WdsxIgYjz7S4u1H,boy,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1fZPsTxFwiJ0RYy,boy,11,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_1fZPsTxFwiJ0RYy,boy,11,11 to 12,balls,"balls (if yes, enter the specific types of objects below)"
+R_1fZPsTxFwiJ0RYy,boy,11,11 to 12,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_1fZPsTxFwiJ0RYy,boy,11,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1fZPsTxFwiJ0RYy,boy,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1JWUY8aQJ7VATv5,girl,5,5 to 6,dolls,dolls
+R_1JWUY8aQJ7VATv5,girl,5,5 to 6,animal figurines,animal figurines
+R_1JWUY8aQJ7VATv5,girl,5,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_1JWUY8aQJ7VATv5,girl,5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1JWUY8aQJ7VATv5,girl,5,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_XwaC0nFLL5vUB8J,boy,10,9 to 10,stuffed animals,stuffed animals
+R_XwaC0nFLL5vUB8J,boy,10,9 to 10,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_XwaC0nFLL5vUB8J,boy,10,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_XwaC0nFLL5vUB8J,boy,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2OJ6SOEPMSepw2d,girl,5,5 to 6,dolls,dolls
+R_2OJ6SOEPMSepw2d,girl,5,5 to 6,stuffed animals,stuffed animals
+R_2OJ6SOEPMSepw2d,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_zeEVd2TiaNUONa1,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_21nVgvGyDEIANAl,boy,4,3 to 4,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_21nVgvGyDEIANAl,boy,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_21nVgvGyDEIANAl,boy,4,3 to 4,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_242xTHRbzT3NeZJ,boy,6,5 to 6,stuffed animals,stuffed animals
+R_242xTHRbzT3NeZJ,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_242xTHRbzT3NeZJ,boy,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_242xTHRbzT3NeZJ,boy,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_11aWf43Y8C7RkS1,girl,4,3 to 4,stuffed animals,stuffed animals
+R_11aWf43Y8C7RkS1,girl,4,3 to 4,action figures,action figures
+R_11aWf43Y8C7RkS1,girl,4,3 to 4,photos,photos / pictures
+R_11aWf43Y8C7RkS1,girl,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_11aWf43Y8C7RkS1,girl,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1LSCETT9MvG806P,boy,4,3 to 4,stuffed animals,stuffed animals
+R_1LSCETT9MvG806P,boy,4,3 to 4,coins,coins / money
+R_1LSCETT9MvG806P,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1LSCETT9MvG806P,boy,4,3 to 4,sticks,sticks
+R_1LSCETT9MvG806P,boy,4,3 to 4,flowers,flowers / petals
+R_1LSCETT9MvG806P,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1LSCETT9MvG806P,boy,4,3 to 4,leaves,leaves
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,stuffed animals,stuffed animals
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,food,"food / perishables (e.g., specific kinds of candy)"
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,coins,coins / money
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,goo,goo / slime
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,shells,shells
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,flowers,flowers / petals
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,posters,posters
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,marbles,marbles
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,moss,moss
+R_2PoF2TD2BEI5gBJ,girl,8,7 to 8,leaves,leaves
+R_3pqWudqLyab5wxY,girl,2,NA,dolls,dolls
+R_3pqWudqLyab5wxY,girl,2,NA,animal figurines,animal figurines
+R_3pqWudqLyab5wxY,girl,2,NA,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3pqWudqLyab5wxY,girl,2,NA,shells,shells
+R_sLmvKIBNGnVqtOh,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_sLmvKIBNGnVqtOh,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1N5466lfo2UkVMI,boy,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1N5466lfo2UkVMI,boy,8,7 to 8,food,"food / perishables (e.g., specific kinds of candy)"
+R_1N5466lfo2UkVMI,boy,8,7 to 8,coins,coins / money
+R_1N5466lfo2UkVMI,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1N5466lfo2UkVMI,boy,8,7 to 8,sticks,sticks
+R_1N5466lfo2UkVMI,boy,8,7 to 8,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_1N5466lfo2UkVMI,boy,8,7 to 8,postcards,postcards
+R_3OepPJb8HMntpbD,girl,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3OepPJb8HMntpbD,girl,7,7 to 8,stuffed animals,stuffed animals
+R_3OepPJb8HMntpbD,girl,7,7 to 8,goo,goo / slime
+R_3OepPJb8HMntpbD,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3OepPJb8HMntpbD,girl,7,7 to 8,sticks,sticks
+R_3OepPJb8HMntpbD,girl,7,7 to 8,leaves,leaves
+R_3Ljs5BzMaUESj4Y,boy,6,5 to 6,stuffed animals,stuffed animals
+R_3Ljs5BzMaUESj4Y,boy,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_20Vw6OCo76Su1ep,boy,9,9 to 10,goo,goo / slime
+R_22LdJwm5ngdJrBW,boy,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,dolls,dolls
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,coins,coins / money
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,goo,goo / slime
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,plants,plants
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,flowers,flowers / petals
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2ZEb4fa2hhtzYeM,girl,6,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_2yl2RBpXenQw4ed,girl,7,7 to 8,action figures,action figures
+R_2yl2RBpXenQw4ed,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,stuffed animals,stuffed animals
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,balls,"balls (if yes, enter the specific types of objects below)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,coins,coins / money
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,shells,shells
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2bUwFzU22r6vBFW,girl,11,11 to 12,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,dolls,dolls
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,stuffed animals,stuffed animals
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,shells,shells
+R_28zHwa8qvEvbBLe,girl,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,dolls,dolls
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,animal figurines,animal figurines
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,stuffed animals,stuffed animals
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,shells,shells
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_RKR4lLyPHvr7khX,girl,10,9 to 10,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1OU2zhEdrdAzbeB,boy,12,11 to 12,balls,"balls (if yes, enter the specific types of objects below)"
+R_1OU2zhEdrdAzbeB,boy,12,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1OU2zhEdrdAzbeB,boy,12,11 to 12,sticks,sticks
+R_1OU2zhEdrdAzbeB,boy,12,11 to 12,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,animal figurines,animal figurines
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,action figures,action figures
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,flowers,flowers / petals
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2s12MSGnlNn8UrX,boy,6,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_PSQLb91CCaIVioN,boy,6,5 to 6,stuffed animals,stuffed animals
+R_PSQLb91CCaIVioN,boy,6,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_PSQLb91CCaIVioN,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_PSQLb91CCaIVioN,boy,6,5 to 6,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_PSQLb91CCaIVioN,boy,6,5 to 6,shells,shells
+R_PSQLb91CCaIVioN,boy,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2rA5McJgwyULELn,boy,3,3 to 4,stuffed animals,stuffed animals
+R_2rA5McJgwyULELn,boy,3,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2rA5McJgwyULELn,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2rA5McJgwyULELn,boy,3,3 to 4,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2rA5McJgwyULELn,boy,3,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3MDux4EflFTDCgB,girl,5,5 to 6,animal figurines,animal figurines
+R_3MDux4EflFTDCgB,girl,5,5 to 6,stuffed animals,stuffed animals
+R_3MDux4EflFTDCgB,girl,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3MDux4EflFTDCgB,girl,5,5 to 6,magazines,magazines/ newspapers
+R_3MDux4EflFTDCgB,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3MDux4EflFTDCgB,girl,5,5 to 6,shells,shells
+R_3MDux4EflFTDCgB,girl,5,5 to 6,bugs,bugs
+R_3MDux4EflFTDCgB,girl,5,5 to 6,flowers,flowers / petals
+R_3MDux4EflFTDCgB,girl,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3MDux4EflFTDCgB,girl,5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3MDux4EflFTDCgB,girl,5,5 to 6,feathers,feathers
+R_3MDux4EflFTDCgB,girl,5,5 to 6,leaves,leaves
+R_2SwQZBDDH2hppjT,girl,2.75,NA,animal figurines,animal figurines
+R_2SwQZBDDH2hppjT,girl,2.75,NA,stuffed animals,stuffed animals
+R_2SwQZBDDH2hppjT,girl,2.75,NA,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2SwQZBDDH2hppjT,girl,2.75,NA,shells,shells
+R_2SwQZBDDH2hppjT,girl,2.75,NA,bugs,bugs
+R_2SwQZBDDH2hppjT,girl,2.75,NA,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2SwQZBDDH2hppjT,girl,2.75,NA,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_2Y95pgofpcMFpoM,boy,6,5 to 6,coins,coins / money
+R_2Y95pgofpcMFpoM,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_21sNV4Zw8d8byhu,boy,12,11 to 12,balls,"balls (if yes, enter the specific types of objects below)"
+R_21sNV4Zw8d8byhu,boy,12,11 to 12,coins,coins / money
+R_21sNV4Zw8d8byhu,boy,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1o6BUw6T7xNBaIp,boy,8,7 to 8,balls,"balls (if yes, enter the specific types of objects below)"
+R_1o6BUw6T7xNBaIp,boy,8,7 to 8,coins,coins / money
+R_1o6BUw6T7xNBaIp,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1o6BUw6T7xNBaIp,boy,8,7 to 8,shells,shells
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,animal figurines,animal figurines
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,shells,shells
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_Od6YKTWyC5aabSh,boy,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,stuffed animals,stuffed animals
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,shells,shells
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,plants,plants
+R_3nC9tng7ujAQFTT,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1EiyJL8ETCfKG6b,girl,15,NA,goo,goo / slime
+R_1EiyJL8ETCfKG6b,girl,15,NA,photos,photos / pictures
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,dolls,dolls
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,stuffed animals,stuffed animals
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_Y5L555hWd8bIVkR,girl,11,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,dolls,dolls
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,stuffed animals,stuffed animals
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,photos,photos / pictures
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,shells,shells
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,flowers,flowers / petals
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,feathers,feathers
+R_1rdEBemgDRh14Gp,girl,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_10vB75jskg1tHSO,boy,12,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1oj3AjWninpNe8t,boy,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,stuffed animals,stuffed animals
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,coins,coins / money
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,shells,shells
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,leaves,leaves
+R_UhGFwbshpdt41Ut,girl,10,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,stuffed animals,stuffed animals
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,coins,coins / money
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,shells,shells
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_XKYpLBAfaZrUOPf,girl,9,9 to 10,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3MPByP1jyVOkPzX,girl,9,9 to 10,dolls,dolls
+R_3MPByP1jyVOkPzX,girl,9,9 to 10,coins,coins / money
+R_3MPByP1jyVOkPzX,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,stuffed animals,stuffed animals
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,photos,photos / pictures
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,shells,shells
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,posters,posters
+R_QoDd7BVjibOfF2p,boy,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2zqpRgj1SfZyJSo,girl,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2zqpRgj1SfZyJSo,girl,8,7 to 8,dolls,dolls
+R_DT7dRABi1pW5wPf,boy,10,9 to 10,stuffed animals,stuffed animals
+R_DT7dRABi1pW5wPf,boy,10,9 to 10,action figures,action figures
+R_DT7dRABi1pW5wPf,boy,10,9 to 10,toy soldiers,toy soldiers
+R_DT7dRABi1pW5wPf,boy,10,9 to 10,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_DT7dRABi1pW5wPf,boy,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1IF3Q5UJFidDyUk,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_OHHMyNG1yut5odj,boy,4,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_OHHMyNG1yut5odj,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_OHHMyNG1yut5odj,boy,4,3 to 4,shells,shells
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,dolls,dolls
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,animal figurines,animal figurines
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,stuffed animals,stuffed animals
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,food,"food / perishables (e.g., specific kinds of candy)"
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,coins,coins / money
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,photos,photos / pictures
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3hzjfD28Va8hVWG,girl,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_DAIDMtkAaUNraeZ,girl,3,3 to 4,dolls,dolls
+R_DAIDMtkAaUNraeZ,girl,3,3 to 4,stuffed animals,stuffed animals
+R_DAIDMtkAaUNraeZ,girl,3,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_DAIDMtkAaUNraeZ,girl,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_DAIDMtkAaUNraeZ,girl,3,3 to 4,leaves,leaves
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,stuffed animals,stuffed animals
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,balls,"balls (if yes, enter the specific types of objects below)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,coins,coins / money
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,shells,shells
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,sticks,sticks
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2bV4jyxq2vrvpPt,boy,6,5 to 6,feathers,feathers
+R_26etuFsrpDhDYgU,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_26etuFsrpDhDYgU,boy,9,9 to 10,balls,"balls (if yes, enter the specific types of objects below)"
+R_26etuFsrpDhDYgU,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_26etuFsrpDhDYgU,boy,9,9 to 10,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_26etuFsrpDhDYgU,boy,9,9 to 10,coins,coins / money
+R_26etuFsrpDhDYgU,boy,9,9 to 10,shells,shells
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,dolls,dolls
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,stuffed animals,stuffed animals
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,coins,coins / money
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,goo,goo / slime
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,shells,shells
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,sticks,sticks
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,bugs,bugs
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,flowers,flowers / petals
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,feathers,feathers
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,leaves,leaves
+R_1qf7wfPA49AsEe0,girl,7,7 to 8,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_325dYJQF8xqazpa,boy,5,5 to 6,action figures,action figures
+R_325dYJQF8xqazpa,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_325dYJQF8xqazpa,boy,5,5 to 6,shells,shells
+R_325dYJQF8xqazpa,boy,5,5 to 6,leaves,leaves
+R_217Mi6bwivQW0YU,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_217Mi6bwivQW0YU,boy,7,7 to 8,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_217Mi6bwivQW0YU,boy,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_217Mi6bwivQW0YU,boy,7,7 to 8,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_217Mi6bwivQW0YU,boy,7,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_217Mi6bwivQW0YU,boy,7,7 to 8,leaves,leaves
+R_332aNb6jJ2ByWLN,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_332aNb6jJ2ByWLN,boy,9,9 to 10,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_332aNb6jJ2ByWLN,boy,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,dolls,dolls
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,animal figurines,animal figurines
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,sticks,sticks
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,bugs,bugs
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1GZcYVtvqb2E49i,girl,6,5 to 6,feathers,feathers
+R_1GOWy5xoPSbNwk1,girl,8,7 to 8,stuffed animals,stuffed animals
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,animal figurines,animal figurines
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,shells,shells
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_OjmTk9BxWV87gl3,boy,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,action figures,action figures
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,goo,goo / slime
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3DdXv3vPa6pqXHf,boy,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,shells,shells
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,sticks,sticks
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,flowers,flowers / petals
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,feathers,feathers
+R_yrl9QZpWjl0KQJr,girl,8,7 to 8,leaves,leaves
+R_3mfbYXT8ErbI86z,boy,7,7 to 8,stuffed animals,stuffed animals
+R_3mfbYXT8ErbI86z,boy,7,7 to 8,action figures,action figures
+R_WdnVWU6Zbcwm2qt,girl,7,7 to 8,dolls,dolls
+R_WdnVWU6Zbcwm2qt,girl,7,7 to 8,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3iF6NSaBVLi6Rpm,girl,8,7 to 8,stuffed animals,stuffed animals
+R_3iF6NSaBVLi6Rpm,girl,8,7 to 8,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3iF6NSaBVLi6Rpm,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,dolls,dolls
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,animal figurines,animal figurines
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,stuffed animals,stuffed animals
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,coins,coins / money
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,goo,goo / slime
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,photos,photos / pictures
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,sticks,sticks
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,marbles,marbles
+R_8wPIpke7T4SuO6l,girl,4,3 to 4,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_V3d0jCvmn8wJtQt,girl,12,11 to 12,stuffed animals,stuffed animals
+R_V3d0jCvmn8wJtQt,girl,12,11 to 12,shells,shells
+R_V3d0jCvmn8wJtQt,girl,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_V3d0jCvmn8wJtQt,girl,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_V3d0jCvmn8wJtQt,girl,12,11 to 12,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3KOA8FOlNO5xZmH,boy,3,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3KOA8FOlNO5xZmH,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3KOA8FOlNO5xZmH,boy,3,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,dolls,dolls
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,stuffed animals,stuffed animals
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,flowers,flowers / petals
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,leaves,leaves
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2CWxhd0njUl6kYs,girl,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2Y9qVxNqTexx2u8,boy,6,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_2Y9qVxNqTexx2u8,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2Y9qVxNqTexx2u8,boy,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2Y9qVxNqTexx2u8,boy,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_77KouZJwb3CnaGB,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_77KouZJwb3CnaGB,boy,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_77KouZJwb3CnaGB,boy,5,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_77KouZJwb3CnaGB,boy,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_77KouZJwb3CnaGB,boy,5,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_ZgUNPzJjLlDcfaF,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_ZgUNPzJjLlDcfaF,boy,6,5 to 6,shells,shells
+R_71lzPbZyI0gruwx,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_71lzPbZyI0gruwx,boy,9,9 to 10,stuffed animals,stuffed animals
+R_71lzPbZyI0gruwx,boy,9,9 to 10,toy soldiers,toy soldiers
+R_71lzPbZyI0gruwx,boy,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_71lzPbZyI0gruwx,boy,9,9 to 10,shells,shells
+R_71lzPbZyI0gruwx,boy,9,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_71lzPbZyI0gruwx,boy,9,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_71lzPbZyI0gruwx,boy,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,dolls,dolls
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,stuffed animals,stuffed animals
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,sticks,sticks
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,bugs,bugs
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_2ZHnQkAdrea6aLZ,boy,5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3QVpX2IKpS6kzdo,girl,5,5 to 6,dolls,dolls
+R_3QVpX2IKpS6kzdo,girl,5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,dolls,dolls
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,shells,shells
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,flowers,flowers / petals
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_A5PcwgHBTgmi1qx,girl,3,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_233iOS46BZLPJxu,boy,5,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_233iOS46BZLPJxu,boy,5,5 to 6,shells,shells
+R_233iOS46BZLPJxu,boy,5,5 to 6,feathers,feathers
+R_3kbM928fxkGgJd1,girl,5,5 to 6,dolls,dolls
+R_3kbM928fxkGgJd1,girl,5,5 to 6,stuffed animals,stuffed animals
+R_3kbM928fxkGgJd1,girl,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3kbM928fxkGgJd1,girl,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3kbM928fxkGgJd1,girl,5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_25H1cshoYdOPXW9,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_25H1cshoYdOPXW9,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_25H1cshoYdOPXW9,boy,5,5 to 6,leaves,leaves
+R_25H1cshoYdOPXW9,boy,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3CQ76rk0J4Mg40J,boy,12,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3CQ76rk0J4Mg40J,boy,12,11 to 12,animal figurines,animal figurines
+R_3CQ76rk0J4Mg40J,boy,12,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3CQ76rk0J4Mg40J,boy,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2VIvjnodUx01Del,boy,11,11 to 12,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_2VIvjnodUx01Del,boy,11,11 to 12,goo,goo / slime
+R_2VIvjnodUx01Del,boy,11,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2VIvjnodUx01Del,boy,11,11 to 12,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,stuffed animals,stuffed animals
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,coins,coins / money
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1jkQmB0nc3smjWU,boy,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,stuffed animals,stuffed animals
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,action figures,action figures
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,magazines,magazines/ newspapers
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,shells,shells
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,sticks,sticks
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,plants,plants
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,flowers,flowers / petals
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,feathers,feathers
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,leaves,leaves
+R_3oFUbL0RMTOWH1U,girl,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,stuffed animals,stuffed animals
+R_31BqbEI85yerTno,boy,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,action figures,action figures
+R_31BqbEI85yerTno,boy,8,7 to 8,toy soldiers,toy soldiers
+R_31BqbEI85yerTno,boy,8,7 to 8,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_31BqbEI85yerTno,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_31BqbEI85yerTno,boy,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,stuffed animals,stuffed animals
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,coins,coins / money
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2Bi0JkdFMKZY2y5,boy,11,11 to 12,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,stuffed animals,stuffed animals
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,shells,shells
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,sticks,sticks
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,plants,plants
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,flowers,flowers / petals
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,feathers,feathers
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,moss,moss
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,leaves,leaves
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3KN5fBbMBtQmmqd,boy,9,9 to 10,postcards,postcards
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,dolls,dolls
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,stuffed animals,stuffed animals
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,photos,photos / pictures
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3EsdfJEUpX1NcSR,girl,11,11 to 12,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3PNOCplvNHUo7c7,girl,9,9 to 10,dolls,dolls
+R_3PNOCplvNHUo7c7,girl,9,9 to 10,stuffed animals,stuffed animals
+R_3PNOCplvNHUo7c7,girl,9,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_3PNOCplvNHUo7c7,girl,9,9 to 10,coins,coins / money
+R_3PNOCplvNHUo7c7,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_24pGqJ6CC63VEwm,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_24pGqJ6CC63VEwm,boy,7,7 to 8,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_24pGqJ6CC63VEwm,boy,7,7 to 8,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3feiDLUVboHcF7A,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3feiDLUVboHcF7A,boy,7,7 to 8,coins,coins / money
+R_3feiDLUVboHcF7A,boy,7,7 to 8,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3CVPHSTy8rFEeFt,girl,7,7 to 8,animal figurines,animal figurines
+R_3CVPHSTy8rFEeFt,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3CVPHSTy8rFEeFt,girl,7,7 to 8,sticks,sticks
+R_3CVPHSTy8rFEeFt,girl,7,7 to 8,flowers,flowers / petals
+R_CZIBYSlonxVf333,girl,4,3 to 4,dolls,dolls
+R_CZIBYSlonxVf333,girl,4,3 to 4,animal figurines,animal figurines
+R_CZIBYSlonxVf333,girl,4,3 to 4,stuffed animals,stuffed animals
+R_CZIBYSlonxVf333,girl,4,3 to 4,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,action figures,action figures
+R_CZIBYSlonxVf333,girl,4,3 to 4,goo,goo / slime
+R_CZIBYSlonxVf333,girl,4,3 to 4,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_CZIBYSlonxVf333,girl,4,3 to 4,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,flowers,flowers / petals
+R_CZIBYSlonxVf333,girl,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_CZIBYSlonxVf333,girl,4,3 to 4,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,animal figurines,animal figurines
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,stuffed animals,stuffed animals
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,goo,goo / slime
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,sticks,sticks
+R_1N3yMZFkSgYCWME,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2to6AACCWSPRqs9,girl,4,3 to 4,dolls,dolls
+R_2to6AACCWSPRqs9,girl,4,3 to 4,stuffed animals,stuffed animals
+R_2to6AACCWSPRqs9,girl,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2to6AACCWSPRqs9,girl,4,3 to 4,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,action figures,action figures
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,coins,coins / money
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,sticks,sticks
+R_2WC4LeWD7FJL0eK,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,animal figurines,animal figurines
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,stuffed animals,stuffed animals
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,balls,"balls (if yes, enter the specific types of objects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,coins,coins / money
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,magazines,magazines/ newspapers
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,photos,photos / pictures
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,sticks,sticks
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_27KDrC3AFJ3MBO2,boy,7,7 to 8,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,marbles,marbles
+R_1IcOzUTbOoGtXu1,boy,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,dolls,dolls
+R_2V3lQO046ETSXiv,girl,10,9 to 10,animal figurines,animal figurines
+R_2V3lQO046ETSXiv,girl,10,9 to 10,stuffed animals,stuffed animals
+R_2V3lQO046ETSXiv,girl,10,9 to 10,coins,coins / money
+R_2V3lQO046ETSXiv,girl,10,9 to 10,photos,photos / pictures
+R_2V3lQO046ETSXiv,girl,10,9 to 10,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,shells,shells
+R_2V3lQO046ETSXiv,girl,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,feathers,feathers
+R_2V3lQO046ETSXiv,girl,10,9 to 10,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_2V3lQO046ETSXiv,girl,10,9 to 10,postcards,postcards
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,stuffed animals,stuffed animals
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,sticks,sticks
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,plants,plants
+R_AcG2DRgZ87xyoz7,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1DCmTZL04XUO59f,boy,7,7 to 8,action figures,action figures
+R_1DCmTZL04XUO59f,boy,7,7 to 8,coins,coins / money
+R_1DCmTZL04XUO59f,boy,7,7 to 8,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1DCmTZL04XUO59f,boy,7,7 to 8,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1DCmTZL04XUO59f,boy,7,7 to 8,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,stuffed animals,stuffed animals
+R_2dokMBTxgA6n828,girl,12,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,coins,coins / money
+R_2dokMBTxgA6n828,girl,12,11 to 12,photos,photos / pictures
+R_2dokMBTxgA6n828,girl,12,11 to 12,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,shells,shells
+R_2dokMBTxgA6n828,girl,12,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2dokMBTxgA6n828,girl,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,animal figurines,animal figurines
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,stuffed animals,stuffed animals
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,balls,"balls (if yes, enter the specific types of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_2UiuFx4WGK5WGsg,boy,9,9 to 10,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,stuffed animals,stuffed animals
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,action figures,action figures
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,sticks,sticks
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,flowers,flowers / petals
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2fg7xi3EmIkZwpZ,boy,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2xQS2TQ2WtvASt8,boy,11,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2xQS2TQ2WtvASt8,boy,11,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2xQS2TQ2WtvASt8,boy,11,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_6GdsmkZOsGYIS6l,boy,4,3 to 4,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_6GdsmkZOsGYIS6l,boy,4,3 to 4,coins,coins / money
+R_6GdsmkZOsGYIS6l,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2sauzadgK0TeFN8,girl,11,11 to 12,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2sauzadgK0TeFN8,girl,11,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2sauzadgK0TeFN8,girl,11,11 to 12,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3LZSH8Psa7Oa8uB,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3LZSH8Psa7Oa8uB,boy,5,5 to 6,action figures,action figures
+R_3LZSH8Psa7Oa8uB,boy,5,5 to 6,sticks,sticks
+R_3LZSH8Psa7Oa8uB,boy,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3HSvG1jsDKkMYQV,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3HSvG1jsDKkMYQV,boy,9,9 to 10,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3HSvG1jsDKkMYQV,boy,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,stuffed animals,stuffed animals
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,balls,"balls (if yes, enter the specific types of objects below)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,action figures,action figures
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,shells,shells
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,flowers,flowers / petals
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2cbWYmLXBgFyYyy,boy,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,dolls,dolls
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,stuffed animals,stuffed animals
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,coins,coins / money
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,magazines,magazines/ newspapers
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,photos,photos / pictures
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,shells,shells
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,flowers,flowers / petals
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3PZZfIqhajTAtVq,girl,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,animal figurines,animal figurines
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,stuffed animals,stuffed animals
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,action figures,action figures
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1hFuzvLK6qWVqdO,boy,4,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_OKacM38IRGrkVvb,boy,5,5 to 6,coins,coins / money
+R_OKacM38IRGrkVvb,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3NEqAVD4XsA0dsq,girl,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3NEqAVD4XsA0dsq,girl,12,11 to 12,shells,shells
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,stuffed animals,stuffed animals
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,shells,shells
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,leaves,leaves
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2SJmAfJbix6xpOF,girl,5,5 to 6,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3QX67AUmmYPHI89,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3QX67AUmmYPHI89,boy,7,7 to 8,stuffed animals,stuffed animals
+R_3QX67AUmmYPHI89,boy,7,7 to 8,balls,"balls (if yes, enter the specific types of objects below)"
+R_3QX67AUmmYPHI89,boy,7,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3QX67AUmmYPHI89,boy,7,7 to 8,action figures,action figures
+R_3QX67AUmmYPHI89,boy,7,7 to 8,toy soldiers,toy soldiers
+R_3QX67AUmmYPHI89,boy,7,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3QX67AUmmYPHI89,boy,7,7 to 8,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3L0y6sCzj7ahau5,girl,5,5 to 6,dolls,dolls
+R_3L0y6sCzj7ahau5,girl,5,5 to 6,stuffed animals,stuffed animals
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,animal figurines,animal figurines
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,stuffed animals,stuffed animals
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2CcUh1XYKv9tTKJ,boy,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2pKvpD0TnukyksF,girl,5,5 to 6,stuffed animals,stuffed animals
+R_2pKvpD0TnukyksF,girl,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2pKvpD0TnukyksF,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2pKvpD0TnukyksF,girl,5,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2pKvpD0TnukyksF,girl,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,animal figurines,animal figurines
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,stuffed animals,stuffed animals
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,holiday,"holiday objects (e.g., snow globes or other ornaments)"
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,goo,goo / slime
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3EgyRWbnOqsnp6w,girl,10,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1CvjumYPyCAv9Z3,boy,6,5 to 6,animal figurines,animal figurines
+R_1CvjumYPyCAv9Z3,boy,6,5 to 6,sticks,sticks
+R_1CvjumYPyCAv9Z3,boy,6,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1CvjumYPyCAv9Z3,boy,6,5 to 6,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,stuffed animals,stuffed animals
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,coins,coins / money
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,shells,shells
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,marbles,marbles
+R_3qfdImTC61Rk8Eh,boy,12,11 to 12,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,animal figurines,animal figurines
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,stuffed animals,stuffed animals
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,shells,shells
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,sticks,sticks
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,leaves,leaves
+R_3FXat6WVQmnfbgR,girl,5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_27WjhOyUZH75mxN,boy,12,11 to 12,food,"food / perishables (e.g., specific kinds of candy)"
+R_27WjhOyUZH75mxN,boy,12,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_27WjhOyUZH75mxN,boy,12,11 to 12,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_27WjhOyUZH75mxN,boy,12,11 to 12,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_27WjhOyUZH75mxN,boy,12,11 to 12,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3PGMshRg3CwalL7,boy,7,7 to 8,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_3PGMshRg3CwalL7,boy,7,7 to 8,animal figurines,animal figurines
+R_3PGMshRg3CwalL7,boy,7,7 to 8,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3PGMshRg3CwalL7,boy,7,7 to 8,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_77pKNF6G8WdzWcV,girl,8,7 to 8,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_77pKNF6G8WdzWcV,girl,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_77pKNF6G8WdzWcV,girl,8,7 to 8,shells,shells
+R_1NEonnUN8icRD7h,boy,5,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_1NEonnUN8icRD7h,boy,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_1NEonnUN8icRD7h,boy,5,5 to 6,shells,shells
+R_2aLaaB6yP8e6iaM,boy,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2aLaaB6yP8e6iaM,boy,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2aLaaB6yP8e6iaM,boy,8,7 to 8,sticks,sticks
+R_2qfrZ3MMVTclZoo,girl,9,9 to 10,stuffed animals,stuffed animals
+R_2qfrZ3MMVTclZoo,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2qfrZ3MMVTclZoo,girl,9,9 to 10,shells,shells
+R_1JW9W4jRzpbLhoO,girl,9,9 to 10,balls,"balls (if yes, enter the specific types of objects below)"
+R_1JW9W4jRzpbLhoO,girl,9,9 to 10,goo,goo / slime
+R_1JW9W4jRzpbLhoO,girl,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,stuffed animals,stuffed animals
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,balls,"balls (if yes, enter the specific types of objects below)"
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,marbles,marbles
+R_3MlCjEFOD5xDSBi,boy,6,5 to 6,leaves,leaves
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,animal figurines,animal figurines
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,stuffed animals,stuffed animals
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,goo,goo / slime
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,shells,shells
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,bugs,bugs
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,flowers,flowers / petals
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,moss,moss
+R_3fuG3REaBa7TVFc,boy,9,9 to 10,leaves,leaves
+R_7QFfwMMJJeiYD2F,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_7QFfwMMJJeiYD2F,boy,9,9 to 10,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_7QFfwMMJJeiYD2F,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,balls,"balls (if yes, enter the specific types of objects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,sports memorabilia,"sports memorabilia (if yes, enter the specific types of sports objects your child collects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,action figures,action figures
+R_e42lkI7wE357NsZ,boy,10,9 to 10,coins,coins / money
+R_e42lkI7wE357NsZ,boy,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_e42lkI7wE357NsZ,boy,10,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_2PjQtRppUhli4mP,girl,5,5 to 6,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2PjQtRppUhli4mP,girl,5,5 to 6,dolls,dolls
+R_2PjQtRppUhli4mP,girl,5,5 to 6,stuffed animals,stuffed animals
+R_2PjQtRppUhli4mP,girl,5,5 to 6,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_2PjQtRppUhli4mP,girl,5,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2PjQtRppUhli4mP,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2PjQtRppUhli4mP,girl,5,5 to 6,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_1kH9HUfUWvpfens,girl,6,5 to 6,dolls,dolls
+R_1kH9HUfUWvpfens,girl,6,5 to 6,stuffed animals,stuffed animals
+R_1kH9HUfUWvpfens,girl,6,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1kH9HUfUWvpfens,girl,6,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1kH9HUfUWvpfens,girl,6,5 to 6,sticks,sticks
+R_1kH9HUfUWvpfens,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_vAkmvnOB0M1uX85,boy,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_vAkmvnOB0M1uX85,boy,9,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2dtgN5T76FyUuoL,boy,3,3 to 4,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1FDq9ebViYVJEgA,boy,12,11 to 12,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_1FDq9ebViYVJEgA,boy,12,11 to 12,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,animal figurines,animal figurines
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,stuffed animals,stuffed animals
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2XmUYO0bSqQceCe,boy,10,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_2B5vPjRg4Jy2tnE,girl,7.5,7 to 8,stuffed animals,stuffed animals
+R_2B5vPjRg4Jy2tnE,girl,7.5,7 to 8,board games,"board games (if yes, enter some of your child's favorite games below)"
+R_2B5vPjRg4Jy2tnE,girl,7.5,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2B5vPjRg4Jy2tnE,girl,7.5,7 to 8,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_3dEQcdA245lr0TX,boy,3.5,3 to 4,stuffed animals,stuffed animals
+R_3dEQcdA245lr0TX,boy,3.5,3 to 4,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3dEQcdA245lr0TX,boy,3.5,3 to 4,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_3dEQcdA245lr0TX,boy,3.5,3 to 4,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,dolls,dolls
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,animal figurines,animal figurines
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,stuffed animals,stuffed animals
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,goo,goo / slime
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,photos,photos / pictures
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,music,music (physical objects such as records/CDs/cassettes or digital music)
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,shells,shells
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,sticks,sticks
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,bugs,bugs
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,flowers,flowers / petals
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,marbles,marbles
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,feathers,feathers
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,clothes,"specific kinds of clothes or shoes (if yes, enter the specific kind below)"
+R_2xKMbpXlqeac7oG,girl,8,7 to 8,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,dolls,dolls
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,coins,coins / money
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,shells,shells
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_31HOXuRwR9x9Gy0,girl,6,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_3HkmAKPw4w3P92F,boy,2,NA,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,dolls,dolls
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,animal figurines,animal figurines
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,stuffed animals,stuffed animals
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_RhsTJCnuSAUz8Rz,girl,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_ext00kp4slid09X,girl,7,7 to 8,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_ext00kp4slid09X,girl,7,7 to 8,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_ext00kp4slid09X,girl,7,7 to 8,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3j6w8iVzEjwGfNQ,girl,5,5 to 6,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_3j6w8iVzEjwGfNQ,girl,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_3j6w8iVzEjwGfNQ,girl,5,5 to 6,marbles,marbles
+R_3qQbN1a0IyJLw4a,girl,7,7 to 8,stuffed animals,stuffed animals
+R_24cUoJ6f3YlNIwT,girl,6,5 to 6,plants,plants
+R_24cUoJ6f3YlNIwT,girl,6,5 to 6,flowers,flowers / petals
+R_24cUoJ6f3YlNIwT,girl,6,5 to 6,playsets,"specific kinds of playsets (e.g., Playmobil sets) (if yes, enter the specific types of objects below)"
+R_24cUoJ6f3YlNIwT,girl,6,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1rctnadjwXepxRO,girl,3,3 to 4,dolls,dolls
+R_1rctnadjwXepxRO,girl,3,3 to 4,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1rctnadjwXepxRO,girl,3,3 to 4,plants,plants
+R_1rctnadjwXepxRO,girl,3,3 to 4,flowers,flowers / petals
+R_1CdWh06iEIemsJW,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1CdWh06iEIemsJW,boy,5,5 to 6,sticks,sticks
+R_3hgx8S5N3U5E53h,boy,5,5 to 6,animal figurines,animal figurines
+R_3hgx8S5N3U5E53h,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_3hgx8S5N3U5E53h,boy,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_3hgx8S5N3U5E53h,boy,5,5 to 6,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_3hgx8S5N3U5E53h,boy,5,5 to 6,TV characters,"characters from TV shows or movies (if yes, enter the specific kinds of objects or characters)"
+R_1jwSxDmlh4pJ8dm,girl,7,7 to 8,dolls,dolls
+R_1jwSxDmlh4pJ8dm,girl,7,7 to 8,stuffed animals,stuffed animals
+R_1jwSxDmlh4pJ8dm,girl,7,7 to 8,jewelry,"jewelry (if yes, enter the specific types of objects below)"
+R_1jwSxDmlh4pJ8dm,girl,7,7 to 8,shells,shells
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,food,"food / perishables (e.g., specific kinds of candy)"
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,goo,goo / slime
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,photos,photos / pictures
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,shells,shells
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,posters,posters
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,leaves,leaves
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,art supplies,"pens / pencils / markers / other art supplies (if yes, enter the specific kinds of objects below)"
+R_BD7qZ0xugYFzMMF,girl,9,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,animal figurines,animal figurines
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,stuffed animals,stuffed animals
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,construction toys,"blocks or construction toys (e.g., Lego) (if yes, enter the specific types of objects below)"
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,action figures,action figures
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,toy soldiers,toy soldiers
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,flowers,flowers / petals
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,toy cars,"toy cars or other toy vehicles (if yes, enter the specific types of objects below)"
+R_1iaHkLlp7tvVo6U,boy,5,5 to 6,leaves,leaves
+R_2VlpTsuaXXswuyh,boy,5,5 to 6,sticks,sticks
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,trading cards,"trading cards (if yes, enter the specific types of objects below)"
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,animal figurines,animal figurines
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,coins,coins / money
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,rocks,"rocks / pebbles / crystals / gems (if yes, enter the specific types of objects below)"
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,shells,shells
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,bugs,bugs
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,plants,plants
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,digital items,"items in video / computer / app games (if yes, enter the video game and/ or specific item your child collects)"
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,books,"specific books or book series (if yes, enter any book series your child collects)"
+R_1Hqn0bbiKWVfKBx,boy,9,9 to 10,souvenirs,"souvenirs (if yes, enter the specific kinds of objects below)"
+R_3CTyJdtAnAP88Bi,girl,7,7 to 8,dolls,dolls
+R_3CTyJdtAnAP88Bi,girl,7,7 to 8,goo,goo / slime
