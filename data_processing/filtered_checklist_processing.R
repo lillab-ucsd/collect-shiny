@@ -34,4 +34,4 @@ checklist_long <- d |>
 
 
 # Save as CSV
-write_csv(checklist_long, here(write_path, "collect_v1_checklist_long.csv"))
+write_csv(checklist_long, here(write_path, "collect_v1_filtered_checklist.csv"))
