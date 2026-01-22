@@ -9,17 +9,18 @@ write_path <- here("data")
 # Load data with proper encoding
 processed_data <- read_csv(
   here(read_path, "collect_v1_processed_data.csv"),
-  locale = locale(encoding = "UTF-8")
 )
 
-freelist_items <- read_csv(
-  here(read_path, "collect_v1_freelist_items.csv"),
-  locale = locale(encoding = "UTF-8")
+# Load the freelist dictionary
+freelist_dict <- read_csv(
+  here(read_path, "collect_v1_dictionary.csv"),
 )
 
 # Clean up any encoding issues
-freelist_items <- freelist_items |>
-  mutate(freelist_item = iconv(freelist_item, from = "UTF-8", to = "UTF-8", sub = ""))
+freelist_dict <- freelist_dict |>
+  mutate(
+    freelist_item = iconv(freelist_item, from = "UTF-8", to = "UTF-8", sub = "")
+  )
 
 # Fix column naming inconsistency (freelist_7 should be freelist_6)
 if ("collect_freelist_7" %in% names(processed_data)) {
@@ -32,37 +33,10 @@ for (col in names(processed_data)[str_detect(names(processed_data), "^collect_fr
   processed_data[[col]] <- iconv(processed_data[[col]], from = "UTF-8", to = "UTF-8", sub = "")
 }
 
-# Function to find best matching freelist item using fuzzy matching
-match_freelist_item <- function(collection_name, freelist_df, threshold = 0.2) {
-  if (is.na(collection_name) || collection_name == "NA" || collection_name == "") {
-    return(list(freelist_item = NA, index = NA, match_score = NA))
-  }
-  
-  distances <- stringdist::stringdist(
-    tolower(trimws(collection_name)), 
-    tolower(trimws(freelist_df$freelist_item)),
-    method = "jw"
-  )
-  
-  best_match_idx <- which.min(distances)
-  best_distance <- distances[best_match_idx]
-  
-  if (best_distance <= threshold) {
-    return(list(
-      freelist_item = freelist_df$freelist_item[best_match_idx],
-      index = freelist_df$index[best_match_idx],
-      match_score = 1 - best_distance
-    ))
-  } else {
-    return(list(
-      freelist_item = collection_name,
-      index = NA,
-      match_score = 1 - best_distance
-    ))
-  }
-}
+# ============================================================================
+# Reshape data to long format
+# ============================================================================
 
-# Reshape data to long format with freelist matching
 cat("Processing freelist data...\n")
 
 collection_data <- list()
@@ -101,21 +75,16 @@ for (i in 1:6) {
 # Combine all collections
 freelist_long <- bind_rows(collection_data)
 
-cat("\nMatching collections with freelist items...\n")
+cat("\nMatching collections with dictionary...\n")
 
-# Match with freelist items
-matches <- map_dfr(freelist_long$collect_freelist, function(x) {
-  match_freelist_item(x, freelist_items)
-})
-
-# Add matched data
+# Join with dictionary to get all metadata
 freelist_long <- freelist_long |>
-  bind_cols(matches) |>
+  left_join(
+    freelist_dict,
+    by = c("collect_freelist" = "freelist_item")
+  ) |>
   rename(
-    collection_name_original = collect_freelist,
-    collection_name_matched = freelist_item,
-    freelist_index = index,
-    match_confidence = match_score
+    collection_name_original = collect_freelist
   ) |>
   mutate(
     is_favorite = collection_name_original == favorite,
@@ -125,25 +94,61 @@ freelist_long <- freelist_long |>
     interest_playing = as.numeric(interest_playing)
   )
 
+# ============================================================================
 # Report matching statistics
+# ============================================================================
+
 cat("\n=== Matching Statistics ===\n")
 cat("Total collections:", nrow(freelist_long), "\n")
-cat("Matched to freelist:", sum(!is.na(freelist_long$freelist_index)), "\n")
-cat("Unmatched:", sum(is.na(freelist_long$freelist_index)), "\n")
-cat("Average match confidence:", round(mean(freelist_long$match_confidence, na.rm = TRUE), 3), "\n")
+cat("Successfully matched:", sum(!is.na(freelist_long$cleaned_name)), "\n")
+cat("Unmatched:", sum(is.na(freelist_long$cleaned_name)), "\n")
 
-# Show unmatched items
+# Show unmatched items if any
 unmatched <- freelist_long |>
-  filter(is.na(freelist_index)) |>
+  filter(is.na(cleaned_name)) |>
   count(collection_name_original) |>
   arrange(desc(n))
 
 if (nrow(unmatched) > 0) {
-  cat("\n=== Unmatched Items (top 10) ===\n")
-  print(head(unmatched, 10))
+  cat("\n=== WARNING: Unmatched Items ===\n")
+  print(unmatched)
+  cat("\nThese items are in the data but not in the dictionary!\n")
 }
 
-# Save as CSV
-write_csv(freelist_long, here(write_path, "collect_v1_filtered_freelist.csv"))
+# Show category distribution
+cat("\n=== Category Distribution ===\n")
+category_stats <- freelist_long |>
+  filter(!is.na(category)) |>
+  count(category) |>
+  arrange(desc(n))
+
+print(category_stats)
+
+# Show object type distribution
+cat("\n=== Object Type Distribution ===\n")
+type_stats <- freelist_long |>
+  filter(!is.na(object_type)) |>
+  count(object_type) |>
+  arrange(desc(n))
+
+print(type_stats)
+
+# ============================================================================
+# Save processed data
+# ============================================================================
+
+write_csv(freelist_long, here(write_path, "collect_v1_freelist_long.csv"))
 
 cat("\n✓ Saved to:", here(write_path, "collect_v1_freelist_long.csv"), "\n")
+
+# ============================================================================
+# Summary of available columns
+# ============================================================================
+
+cat("\n=== Available Columns in Output ===\n")
+cat("Demographics:", paste(c("response_id", "participant_id", "age_num", "age_bin", "gender_clean"), collapse = ", "), "\n")
+cat("Collection Info:", paste(c("collection_name_original", "cleaned_name", "unified_name", "collection_number", "is_favorite"), collapse = ", "), "\n")
+cat("Dictionary Fields:", paste(c("object_type", "category", "natural", "taxonomic_content", "taxonomic_object"), collapse = ", "), "\n")
+cat("Flags:", paste(c("animal-related", "fiction-related", "collectible"), collapse = ", "), "\n")
+cat("Interest Ratings:", paste(c("interest_learning", "interest_curious", "interest_talking", "interest_playing"), collapse = ", "), "\n")
+cat("Context:", paste(c("collection_origin", "activities", "collect_friends", "collection_reason", "ask_child"), collapse = ", "), "\n")

@@ -20,6 +20,17 @@ filter_checklist <- function(data, genders, age_range) {
     )
 }
 
+# Parse gender selection from dropdown
+parse_gender_selection <- function(gender_filter) {
+  if (gender_filter %in% c("boy", "girl")) {
+    list(genders = gender_filter, separate = FALSE)
+  } else if (gender_filter == "both_separate") {
+    list(genders = c("boy", "girl"), separate = TRUE)
+  } else {  # both_combined
+    list(genders = c("boy", "girl"), separate = FALSE)
+  }
+}
+
 # Count participants by item and calculate percentages
 # Used by: Top Items Proportion, Top Items Table
 count_by_item <- function(data) {
@@ -36,14 +47,14 @@ count_by_item <- function(data) {
 # ============================================================================
 
 # Plot top items with single color
-plot_top_items <- function(df) {
+plot_top_items <- function(df, title, color) {
   ggplot(df, aes(x = reorder(clean_item_name, percent), y = percent)) +
-    geom_col(fill = "#4A90E2", width = 0.7, alpha = 0.9) +
+    geom_col(fill = color, width = 0.7, alpha = 0.9) +
     coord_flip() +
     labs(
       x = NULL,
       y = "Proportion of Participants",
-      title = "Top Collected Items"
+      title = title
     ) +
     scale_y_continuous(
       labels = scales::percent_format(accuracy = 1),
@@ -107,7 +118,7 @@ plot_top_items_by_gender <- function(data, n_items) {
     theme_minimal(base_size = 14) +
     theme(
       legend.position = "bottom",
-      legend.title = element_text(face = "bold", size = 12),
+      legend.title = element_text(face = "bold", size = 16),
       legend.text = element_text(size = 11),
       plot.title = element_text(face = "bold", size = 16, hjust = 0.5, margin = margin(b = 15)),
       panel.grid.major.y = element_blank(),
@@ -286,7 +297,6 @@ create_combined_table <- function(data) {
 
 # Compute age trends for multiple items
 compute_age_trends_multi <- function(filtered_data, full_data, items, genders, age_range) {
-  
   # Get total participants per age and gender
   totals <- full_data |>
     filter(
@@ -306,39 +316,91 @@ compute_age_trends_multi <- function(filtered_data, full_data, items, genders, a
     filter(!is.na(percent))
 }
 
-# Enhanced age trend plotting
-plot_age_trends_enhanced <- function(df, view_mode, show_points, show_smooth, 
-                                     line_size, selected_genders) {
+# Compute age trends with combined gender option
+compute_age_trends_combined <- function(filtered_data, full_data, items, age_range) {
+  # Get total participants per age (combining both genders)
+  totals <- full_data |>
+    filter(
+      age_num >= age_range[1],
+      age_num <= age_range[2]
+    ) |>
+    group_by(age_num) |>
+    summarize(total = n_distinct(participant_id), .groups = "drop")
   
-  # Color palettes
-  gender_colors <- c("girl" = "#C06C84", "boy" = "#0D677C")
+  # Calculate proportions for each item (combining both genders)
+  filtered_data |>
+    group_by(clean_item_name, age_num) |>
+    summarize(count = n_distinct(participant_id), .groups = "drop") |>
+    left_join(totals, by = "age_num") |>
+    mutate(
+      percent = count / total,
+      gender_clean = "combined"  # Add a gender column for consistency
+    ) |>
+    filter(!is.na(percent))
+}
+
+# Enhanced age trend plotting
+plot_age_trends_enhanced <- function(df, view_mode, show_points, gender_mode) {
+  gender_colors <- c("girl" = "#C06C84", "boy" = "#0D677C", "combined" = "#4A90E2")
   item_colors <- c("#2A7FFF", "#FF6B6B", "#4ECDC4", "#FFD93D", "#95E1D3", "#F38181")
   
-  # Base plot
-  if (view_mode == "facet_item") {
-    # Facet by item
-    p <- ggplot(df, aes(x = age_num, y = percent, 
-                        color = gender_clean,
-                        group = gender_clean))
-    
+  # Determine if we're showing gender separation
+  show_gender <- gender_mode == "both_separate"
+  
+  # Base plot setup
+  if (view_mode == "together") {
+    # All items on one plot
+    if (show_gender) {
+      # Show different colors for each item, different line types for gender
+      p <- ggplot(df, aes(x = age_num, y = percent, 
+                          color = clean_item_name, 
+                          linetype = gender_clean, 
+                          group = interaction(clean_item_name, gender_clean)))
+    } else {
+      # Just show different colors for each item
+      p <- ggplot(df, aes(x = age_num, y = percent, 
+                          color = clean_item_name, 
+                          group = clean_item_name))
+    }
   } else {
-    # Facet by gender
-    p <- ggplot(df, aes(x = age_num, y = percent, 
-                        color = clean_item_name,
-                        group = clean_item_name))
+    # Separate panel for each item (facet_item)
+    if (show_gender) {
+      # Within each item panel, show boy/girl lines
+      p <- ggplot(df, aes(x = age_num, y = percent, 
+                          color = gender_clean, 
+                          group = gender_clean))
+    } else {
+      # Single line per item panel - color by gender_clean which will be boy, girl, or combined
+      p <- ggplot(df, aes(x = age_num, y = percent, 
+                          color = gender_clean, 
+                          group = 1))
+    }
   }
   
   # Add lines
-  p <- p + geom_line(size = line_size, alpha = 0.8)
+  p <- p + geom_line(size = 1, alpha = 0.8)
   
-  # Add points
-  p <- p + geom_point(size = line_size * 1.5, alpha = 0.7)
+  # Add points if requested
+  if (show_points) {
+    p <- p + geom_point(size = 1 * 1.5, alpha = 0.7)
+  }
+  
+  # Apply color scales
+  if (view_mode == "together") {
+    # Color by item
+    p <- p + scale_color_manual(values = item_colors, name = "Item")
+    if (show_gender) {
+      p <- p + scale_linetype_manual(values = c("boy" = "solid", "girl" = "dashed"), 
+                                     name = "Gender")
+    }
+  } else {
+    # facet_item mode - always color by gender (boy, girl, or combined)
+    p <- p + scale_color_manual(values = gender_colors, name = "Gender", guide = "none")
+  }
   
   # Add facets if needed
   if (view_mode == "facet_item") {
     p <- p + facet_wrap(~clean_item_name, ncol = 2)
-  } else if (view_mode == "facet_gender") {
-    p <- p + facet_wrap(~gender_clean, ncol = 2)
   }
   
   # Theme and labels
@@ -368,117 +430,36 @@ plot_age_trends_enhanced <- function(df, view_mode, show_points, show_smooth,
 }
 
 # Compute summary statistics for trends
-compute_trend_summary <- function(df) {
-  df |>
-    group_by(clean_item_name, gender_clean) |>
-    summarize(
-      `Min Age` = min(age_num, na.rm = TRUE),
-      `Max Age` = max(age_num, na.rm = TRUE),
-      `Avg Proportion` = scales::percent(mean(percent, na.rm = TRUE), accuracy = 0.1),
-      `Peak Age` = age_num[which.max(percent)],
-      `Peak Proportion` = scales::percent(max(percent, na.rm = TRUE), accuracy = 0.1),
-      `Sample Size` = sum(count, na.rm = TRUE),
-      .groups = "drop"
-    ) |>
-    rename(
-      Item = clean_item_name,
-      Gender = gender_clean
-    )
-}
-
-# ============================================================================
-# AGE BIN COMPARISON - Functions for age_bin_comparison.R
-# ============================================================================
-
-# Compute age bin summary (groups ages into bins to reduce noise)
-compute_age_bin_summary <- function(data, item_name, genders) {
-  
-  # Filter by item and gender
-  item_data <- data |>
-    filter(
-      clean_item_name == item_name,
-      gender_clean %in% genders
-    )
-  
-  # Get total participants per age bin and gender
-  total_per_bin <- data |>
-    filter(gender_clean %in% genders) |>
-    group_by(age_bin, gender_clean) |>
-    summarize(total = n_distinct(participant_id), .groups = "drop")
-  
-  # Calculate proportions
-  result <- item_data |>
-    group_by(age_bin, gender_clean) |>
-    summarize(count = n_distinct(participant_id), .groups = "drop") |>
-    left_join(total_per_bin, by = c("age_bin", "gender_clean")) |>
-    mutate(percent = count / total) |>
-    filter(!is.na(age_bin))
-  
-  # Get unique age bins and sort them by the starting age number
-  age_bin_order <- result |>
-    distinct(age_bin) |>
-    mutate(start_age = as.numeric(str_extract(age_bin, "\\d+"))) |>
-    arrange(start_age) |>
-    pull(age_bin)
-  
-  # Convert age_bin to ordered factor
-  result |>
-    mutate(age_bin = factor(age_bin, levels = age_bin_order))
-}
-
-# Plot age bin trends (single plot, can show one or both genders)
-plot_age_bin_trend <- function(df, item_name, gender_colors, selected_genders) {
-  
-  # If both genders selected, show lines for each
-  if (length(selected_genders) == 2) {
-    p <- ggplot(df, aes(x = age_bin, y = percent, color = gender_clean, group = gender_clean)) +
-      geom_line(size = 1.2) +
-      geom_point(size = 3) +
-      scale_color_manual(values = gender_colors, name = "Gender")
-    
-    # If one gender, show single line
+compute_trend_summary <- function(df, gender_mode) {
+  if (gender_mode == "both_combined") {
+    # Don't show gender column when combined
+    df |>
+      group_by(clean_item_name) |>
+      summarize(
+        `Min Age` = min(age_num, na.rm = TRUE),
+        `Max Age` = max(age_num, na.rm = TRUE),
+        `Avg Proportion` = scales::percent(mean(percent, na.rm = TRUE), accuracy = 0.1),
+        `Peak Age` = age_num[which.max(percent)],
+        `Peak Proportion` = scales::percent(max(percent, na.rm = TRUE), accuracy = 0.1),
+        `Sample Size` = sum(count, na.rm = TRUE),
+        .groups = "drop"
+      ) |>
+      rename(Item = clean_item_name)
   } else {
-    color_val <- gender_colors[selected_genders]
-    p <- ggplot(df, aes(x = age_bin, y = percent, group = 1)) +
-      geom_line(size = 1.2, color = color_val) +
-      geom_point(size = 3, color = color_val)
+    # Show gender column when separate or single gender
+    df |>
+      group_by(clean_item_name, gender_clean) |>
+      summarize(
+        `Min Age` = min(age_num, na.rm = TRUE),
+        `Max Age` = max(age_num, na.rm = TRUE),
+        `Avg Proportion` = scales::percent(mean(percent, na.rm = TRUE), accuracy = 0.1),
+        `Peak Age` = age_num[which.max(percent)],
+        `Peak Proportion` = scales::percent(max(percent, na.rm = TRUE), accuracy = 0.1),
+        `Sample Size` = sum(count, na.rm = TRUE),
+        .groups = "drop"
+      ) |>
+      rename(Item = clean_item_name, Gender = gender_clean)
   }
-  
-  # Add common elements
-  p <- p +
-    labs(
-      title = paste("Age Bin Trends for:", item_name),
-      x = "Age Group", 
-      y = "Proportion"
-    ) +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-    scale_x_discrete(labels = function(x) str_replace(x, " to ", "-")) +
-    theme_minimal(base_size = 14) +
-    theme(
-      axis.text.x = element_text(angle = 45, hjust = 1),
-      legend.position = "bottom"
-    )
-  
-  return(p)
-}
-
-# Alternative: Plot age bin trends with faceted panels by gender
-plot_age_bin_trend_faceted <- function(df, item_name) {
-  ggplot(df, aes(x = age_bin, y = percent, group = 1)) +
-    geom_line(size = 1.2, color = "#2A7FFF") +
-    geom_point(size = 3, color = "#2A7FFF") +
-    facet_wrap(~gender_clean, ncol = 2) +
-    labs(
-      title = paste("Age Bin Trends for:", item_name),
-      x = "Age Bin",
-      y = "Proportion"
-    ) +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-    theme_minimal(base_size = 14) +
-    theme(
-      axis.text.x = element_text(angle = 45, hjust = 1),
-      strip.text = element_text(size = 12, face = "bold")
-    )
 }
 
 # ============================================================================
@@ -519,57 +500,105 @@ count_participants_by_gender <- function(data) {
     summarize(total = n_distinct(participant_id), .groups = "drop")
 }
 
-# Plot alignment visualization (slope graph)
-plot_alignment <- function(boys_df, girls_df, shared_df) {
+# Rank-ordered alignment plot with sample sizes
+plot_alignment_ranked <- function(boys_df, girls_df, shared_df, n_boys, n_girls) {
   
+  # Add ranks (rank 1 = highest proportion)
+  boys_df <- boys_df |>
+    arrange(desc(proportion)) |>
+    mutate(rank = row_number())
+  
+  girls_df <- girls_df |>
+    arrange(desc(proportion)) |>
+    mutate(rank = row_number())
+  
+  # Update shared items with ranks
+  shared_df <- shared_df |>
+    left_join(boys_df |> select(clean_item_name, boy_rank = rank), by = "clean_item_name") |>
+    left_join(girls_df |> select(clean_item_name, girl_rank = rank), by = "clean_item_name")
+  
+  # Create plot
   ggplot() +
+    # Connecting lines for shared items
     geom_segment(
       data = shared_df,
-      aes(x = 1, xend = 2, y = prop_boy, yend = prop_girl),
-      color = "gray60"
+      aes(x = 1, xend = 2, y = boy_rank, yend = girl_rank),
+      color = "gray60",
+      alpha = 0.5,
+      size = 0.8
     ) +
+    # Boys points (size based on proportion)
     geom_point(
       data = boys_df,
-      aes(x = 1, y = proportion, size = proportion),
-      color = "#0D677C", alpha = 0.8
+      aes(x = 1, y = rank, size = proportion),
+      color = "#0D677C",
+      alpha = 0.8
     ) +
-    geom_text_repel(
+    # Boys labels (aligned on left)
+    geom_text(
       data = boys_df,
-      aes(x = 1, y = proportion, label = paste0(clean_item_name, " (", round(proportion*100,1), "%)")),
-      nudge_x = -0.1,
-      direction = "y",
+      aes(x = 0.92, y = rank, 
+          label = paste0(rank, ". ", clean_item_name, " (", round(proportion*100, 1), "%)")),
       hjust = 1,
       size = 3.5,
-      color = "#0D677C",
-      segment.color = NA
+      color = "#0D677C"
     ) +
+    # Girls points (size based on proportion)
     geom_point(
       data = girls_df,
-      aes(x = 2, y = proportion, size = proportion),
-      color = "#C06C84", alpha = 0.8
+      aes(x = 2, y = rank, size = proportion),
+      color = "#C06C84",
+      alpha = 0.8
     ) +
-    geom_text_repel(
+    # Girls labels (aligned on right)
+    geom_text(
       data = girls_df,
-      aes(x = 2, y = proportion, label = paste0(clean_item_name, " (", round(proportion*100,1), "%)")),
-      nudge_x = 0.1,
-      direction = "y",
+      aes(x = 2.08, y = rank, 
+          label = paste0(rank, ". ", clean_item_name, " (", round(proportion*100, 1), "%)")),
       hjust = 0,
       size = 3.5,
-      color = "#C06C84",
-      segment.color = NA
+      color = "#C06C84"
+    ) +
+    # Sample sizes at bottom
+    annotate(
+      "text",
+      x = 1,
+      y = max(c(boys_df$rank, girls_df$rank)) + 1.5,
+      label = paste0("n = ", n_boys),
+      size = 5,
+      fontface = "bold",
+      color = "#0D677C"
+    ) +
+    annotate(
+      "text",
+      x = 2,
+      y = max(c(boys_df$rank, girls_df$rank)) + 1.5,
+      label = paste0("n = ", n_girls),
+      size = 5,
+      fontface = "bold",
+      color = "#C06C84"
     ) +
     scale_x_continuous(
-      limits = c(0.5, 2.5),
+      limits = c(0.2, 2.8),
       breaks = c(1, 2),
       labels = c("Boys", "Girls")
     ) +
-    scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
-    labs(x = NULL, y = "Proportion of Participants", size = "Proportion") +
+    scale_y_reverse(expand = expansion(mult = c(0.02, 0.08))) +  # Reverse so rank 1 is at top
+    scale_size_continuous(range = c(4, 12), name = "Proportion") +
+    labs(
+      x = NULL,
+      y = NULL,
+      title = "Top Items by Gender (Rank Ordered)"
+    ) +
     theme_minimal(base_size = 14) +
     theme(
       axis.text.y = element_blank(),
       panel.grid = element_blank(),
-      legend.position = "bottom"
+      legend.position = "bottom",
+      plot.title = element_text(face = "bold", size = 16, hjust = 0.5, margin = margin(b = 20)),
+      axis.text.x = element_text(face = "bold", size = 14, color = "gray30"),
+      plot.background = element_rect(fill = "white", color = NA),
+      panel.background = element_rect(fill = "gray98", color = NA)
     )
 }
 
@@ -577,40 +606,325 @@ plot_alignment <- function(boys_df, girls_df, shared_df) {
 # INTEREST - Functions for interest.R (freelist data)
 # ============================================================================
 
-# Compute interest summary across four dimensions
-compute_interest_summary <- function(data, collection_name, genders, age_range) {
-  data |>
+# Get selection choices based on type
+get_selection_choices <- function(data, selection_type) {
+  if (selection_type == "item") {
+    data |>
+      filter(!is.na(cleaned_name)) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "category") {
+    data |>
+      filter(!is.na(category)) |>
+      pull(category) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "object_type") {
+    data |>
+      filter(!is.na(object_type)) |>
+      pull(object_type) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "taxonomic_content") {
+    data |>
+      filter(!is.na(taxonomic_content), taxonomic_content != "NA") |>
+      pull(taxonomic_content) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "animal_related") {
+    c("Yes" = "y", "No" = "")
+  } else if (selection_type == "fiction_related") {
+    c("Yes" = "y", "No" = "")
+  }
+}
+
+# Get label for selection dropdown
+get_selection_label <- function(selection_type) {
+  labels <- c(
+    "item" = "Select Item:",
+    "category" = "Select Category:",
+    "object_type" = "Select Object Type:",
+    "taxonomic_content" = "Select Taxonomic Content:",
+    "animal_related" = "Animal-Related:",
+    "fiction_related" = "Fiction-Related:"
+  )
+  labels[selection_type]
+}
+
+# Get items in a group
+get_items_in_group <- function(data, selection_type, selection_value) {
+  if (selection_type == "category") {
+    data |>
+      filter(category == selection_value) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "object_type") {
+    data |>
+      filter(object_type == selection_value) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "taxonomic_content") {
+    data |>
+      filter(taxonomic_content == selection_value) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "animal_related") {
+    data |>
+      filter(`animal-related` == selection_value) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  } else if (selection_type == "fiction_related") {
+    data |>
+      filter(`fiction-related` == selection_value) |>
+      pull(cleaned_name) |>
+      unique() |>
+      sort()
+  }
+}
+
+# Compute interest summary for individual item
+compute_interest_summary_item <- function(data, item_name, genders, age_range, gender_mode) {
+  
+  filtered <- data |>
     filter(
-      collection_name_matched == collection_name,
+      cleaned_name == item_name,
       gender_clean %in% genders,
       age_num >= age_range[1],
       age_num <= age_range[2]
-    ) |>
-    select(interest_learning, interest_curious, interest_talking, interest_playing) |>
-    summarise(
-      Learning = mean(interest_learning, na.rm = TRUE),
-      Curious = mean(interest_curious, na.rm = TRUE),
-      Talking = mean(interest_talking, na.rm = TRUE),
-      Playing = mean(interest_playing, na.rm = TRUE),
-      n = n()
-    ) |>
-    pivot_longer(
-      cols = c(Learning, Curious, Talking, Playing),
-      names_to = "dimension",
-      values_to = "mean_score"
     )
+  
+  if (gender_mode == "both_separate") {
+    # Show by gender - count DISTINCT participants per gender
+    summary_data <- filtered |>
+      group_by(gender_clean) |>
+      summarise(
+        Learning = mean(interest_learning, na.rm = TRUE),
+        Curious = mean(interest_curious, na.rm = TRUE),
+        Talking = mean(interest_talking, na.rm = TRUE),
+        Playing = mean(interest_playing, na.rm = TRUE),
+        n = n_distinct(response_id),
+        .groups = "drop"
+      ) |>
+      pivot_longer(
+        cols = c(Learning, Curious, Talking, Playing),
+        names_to = "dimension",
+        values_to = "mean_score"
+      )
+    
+    # Add sample size information as an attribute
+    n_by_gender <- filtered |>
+      group_by(gender_clean) |>
+      summarise(n = n_distinct(response_id), .groups = "drop")
+    
+    attr(summary_data, "sample_sizes") <- n_by_gender
+    
+    return(summary_data)
+  } else {
+    # Combined - count total distinct participants
+    summary_data <- filtered |>
+      summarise(
+        Learning = mean(interest_learning, na.rm = TRUE),
+        Curious = mean(interest_curious, na.rm = TRUE),
+        Talking = mean(interest_talking, na.rm = TRUE),
+        Playing = mean(interest_playing, na.rm = TRUE),
+        n = n_distinct(response_id)
+      ) |>
+      pivot_longer(
+        cols = c(Learning, Curious, Talking, Playing),
+        names_to = "dimension",
+        values_to = "mean_score"
+      )
+    
+    # Add sample size as an attribute
+    attr(summary_data, "sample_size") <- filtered |> 
+      summarise(n = n_distinct(response_id)) |> 
+      pull(n)
+    
+    return(summary_data)
+  }
 }
 
-# Plot interest profile line chart
-plot_interest_profile <- function(summary_df, collection_name) {
-  ggplot(summary_df, aes(x = dimension, y = mean_score, group = 1)) +
-    geom_line(size = 1.2, color = "#2A7FFF") +
-    geom_point(size = 4, color = "#2A7FFF") +
-    scale_y_continuous(limits = c(1, 7), breaks = 1:7) +
-    labs(
-      x = NULL,
-      y = "Mean Agreement (1–7)",
-      title = paste("Interest Profile for:", collection_name)
-    ) +
-    theme_minimal(base_size = 14)
+# Compute interest summary for grouped items
+compute_interest_summary_grouped <- function(data, selection_type, selection_value, 
+                                             genders, age_range, gender_mode) {
+  
+  # Filter by the dictionary field
+  if (selection_type == "category") {
+    filtered <- data |> filter(category == selection_value)
+  } else if (selection_type == "object_type") {
+    filtered <- data |> filter(object_type == selection_value)
+  } else if (selection_type == "taxonomic_content") {
+    filtered <- data |> filter(taxonomic_content == selection_value)
+  } else if (selection_type == "animal_related") {
+    filtered <- data |> filter(`animal-related` == selection_value)
+  } else if (selection_type == "fiction_related") {
+    filtered <- data |> filter(`fiction-related` == selection_value)
+  }
+  
+  # Further filter by gender and age
+  filtered <- filtered |>
+    filter(
+      gender_clean %in% genders,
+      age_num >= age_range[1],
+      age_num <= age_range[2]
+    )
+  
+  if (gender_mode == "both_separate") {
+    # Show by gender - count DISTINCT participants per gender
+    summary_data <- filtered |>
+      group_by(gender_clean) |>
+      summarise(
+        Learning = mean(interest_learning, na.rm = TRUE),
+        Curious = mean(interest_curious, na.rm = TRUE),
+        Talking = mean(interest_talking, na.rm = TRUE),
+        Playing = mean(interest_playing, na.rm = TRUE),
+        n = n_distinct(response_id),
+        .groups = "drop"
+      ) |>
+      pivot_longer(
+        cols = c(Learning, Curious, Talking, Playing),
+        names_to = "dimension",
+        values_to = "mean_score"
+      )
+    
+    # Add sample size information as an attribute
+    n_by_gender <- filtered |>
+      group_by(gender_clean) |>
+      summarise(n = n_distinct(response_id), .groups = "drop")
+    
+    attr(summary_data, "sample_sizes") <- n_by_gender
+    
+    return(summary_data)
+  } else {
+    # Combined - count total distinct participants
+    summary_data <- filtered |>
+      summarise(
+        Learning = mean(interest_learning, na.rm = TRUE),
+        Curious = mean(interest_curious, na.rm = TRUE),
+        Talking = mean(interest_talking, na.rm = TRUE),
+        Playing = mean(interest_playing, na.rm = TRUE),
+        n = n_distinct(response_id)
+      ) |>
+      pivot_longer(
+        cols = c(Learning, Curious, Talking, Playing),
+        names_to = "dimension",
+        values_to = "mean_score"
+      )
+    
+    # Add sample size as an attribute
+    attr(summary_data, "sample_size") <- filtered |> 
+      summarise(n = n_distinct(response_id)) |> 
+      pull(n)
+    
+    return(summary_data)
+  }
+}
+
+# Enhanced plot function
+plot_interest_profile_enhanced <- function(summary_df, selection_name, 
+                                           selection_type, gender_mode) {
+  
+  gender_colors <- c("girl" = "#C06C84", "boy" = "#0D677C")
+  
+  # Create title based on selection type
+  title_text <- if (selection_type == "item") {
+    paste("Interest Profile for:", selection_name)
+  } else if (selection_type == "category") {
+    paste("Interest Profile for Category:", selection_name)
+  } else if (selection_type == "object_type") {
+    paste("Interest Profile for Object Type:", selection_name)
+  } else if (selection_type == "taxonomic_content") {
+    paste("Interest Profile for Taxonomic Content:", selection_name)
+  } else if (selection_type == "animal_related") {
+    paste("Interest Profile for Animal-Related Items:", ifelse(selection_name == "y", "Yes", "No"))
+  } else if (selection_type == "fiction_related") {
+    paste("Interest Profile for Fiction-Related Items:", ifelse(selection_name == "y", "Yes", "No"))
+  }
+  
+  # Create caption with sample size information
+  caption_text <- NULL
+  if (gender_mode == "both_separate") {
+    # Get sample sizes from attribute
+    sample_sizes <- attr(summary_df, "sample_sizes")
+    if (!is.null(sample_sizes)) {
+      boy_n <- sample_sizes |> filter(gender_clean == "boy") |> pull(n)
+      girl_n <- sample_sizes |> filter(gender_clean == "girl") |> pull(n)
+      
+      if (length(boy_n) > 0 && length(girl_n) > 0) {
+        caption_text <- paste0("Boys: n=", boy_n, " | Girls: n=", girl_n)
+      } else if (length(boy_n) > 0) {
+        caption_text <- paste0("Boys: n=", boy_n)
+      } else if (length(girl_n) > 0) {
+        caption_text <- paste0("Girls: n=", girl_n)
+      }
+    }
+  } else {
+    # Get combined sample size from attribute
+    sample_size <- attr(summary_df, "sample_size")
+    if (!is.null(sample_size)) {
+      caption_text <- paste0("n=", sample_size)
+    }
+  }
+  
+  # Create plot
+  if (gender_mode == "both_separate" && "gender_clean" %in% names(summary_df)) {
+    # Grouped bars for boys and girls
+    p <- ggplot(summary_df, aes(x = dimension, y = mean_score, fill = gender_clean)) +
+      geom_col(position = "dodge", width = 0.7, alpha = 0.9) +
+      scale_fill_manual(values = gender_colors, name = "Gender") +
+      scale_y_continuous(limits = c(0, 7), breaks = 0:7, expand = expansion(mult = c(0, 0.05))) +
+      labs(
+        x = NULL,
+        y = "Mean Agreement (1–7)",
+        title = title_text,
+        caption = caption_text
+      ) +
+      theme_minimal(base_size = 14) +
+      theme(
+        legend.position = "bottom",
+        plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+        plot.caption = element_text(size = 13, hjust = 0.5, face = "bold", color = "gray20", margin = margin(t = 10)),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text.x = element_text(size = 12),
+        plot.background = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "gray98", color = NA)
+      )
+  } else {
+    # Single bars - determine color based on gender_mode
+    bar_color <- if (gender_mode == "boy") {
+      "#0D677C"  # Boy color
+    } else if (gender_mode == "girl") {
+      "#C06C84"  # Girl color
+    } else {
+      "#4A90E2"  # Combined color (both_combined)
+    }
+    
+    p <- ggplot(summary_df, aes(x = dimension, y = mean_score)) +
+      geom_col(fill = bar_color, width = 0.6, alpha = 0.9) +
+      scale_y_continuous(limits = c(0, 7), breaks = 0:7, expand = expansion(mult = c(0, 0.05))) +
+      labs(
+        x = NULL,
+        y = "Mean Agreement (1–7)",
+        title = title_text,
+        caption = caption_text
+      ) +
+      theme_minimal(base_size = 14) +
+      theme(
+        plot.title = element_text(face = "bold", size = 14, hjust = 0.5),
+        plot.caption = element_text(size = 13, hjust = 0.5, face = "bold", color = "gray20", margin = margin(t = 10)),
+        panel.grid.major.x = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.text.x = element_text(size = 12),
+        plot.background = element_rect(fill = "white", color = NA),
+        panel.background = element_rect(fill = "gray98", color = NA)
+      )
+  }
+  
+  return(p)
 }

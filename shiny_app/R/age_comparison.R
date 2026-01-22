@@ -18,23 +18,28 @@ age_comparison_ui <- function(id) {
                       
                       selectInput(
                         ns("item_select"),
-                        "Select Items to Compare:",
+                        "Select Items to Compare (max 4):",
                         choices = NULL,
                         multiple = TRUE,
                         selectize = TRUE
                       ),
                       
-                      helpText("Select up to 4 items to compare"),
+                      helpText("Select 1-4 items to compare age trends"),
                       
                       hr(),
                       
                       h4("Display Options", style = "font-weight: bold; color: #495057;"),
                       
-                      checkboxGroupInput(
+                      selectInput(
                         ns("gender_filter"),
-                        "Gender:",
-                        choices = c("boy", "girl"),
-                        selected = c("boy", "girl")
+                        "Select Gender:",
+                        choices = c(
+                          "Boys Only" = "boy",
+                          "Girls Only" = "girl",
+                          "Boys & Girls (Separated)" = "both_separate",
+                          "Boys & Girls (Combined)" = "both_combined"
+                        ),
+                        selected = "both_combined"
                       ),
                       
                       sliderInput(
@@ -50,19 +55,20 @@ age_comparison_ui <- function(id) {
                         ns("view_mode"),
                         "View Mode:",
                         choices = c(
-                          "Facet by Item" = "facet_item",
-                          "Facet by Gender" = "facet_gender"
+                          "All Items Together" = "together",
+                          "Separate Panel per Item" = "facet_item"
                         ),
-                        selected = "facet_item"
+                        selected = "together"
                       ),
                       
-                      sliderInput(
-                        ns("line_size"),
-                        "Line Thickness:",
-                        min = 0.5,
-                        max = 3,
-                        value = 1.2,
-                        step = 0.1
+                      hr(),
+                      
+                      h5("Styling Options", style = "font-weight: bold; color: #495057;"),
+                      
+                      checkboxInput(
+                        ns("show_points"),
+                        "Show Data Points",
+                        value = TRUE
                       )
                     )
              ),
@@ -94,7 +100,7 @@ age_comparison_server <- function(id, data) {
         session,
         "item_select",
         choices = items,
-        selected = items[1:2]  # Default to first 2 items
+        selected = items[1:min(2, length(items))]  # Default to first 2 items
       )
       
       min_age <- min(data$age_num, na.rm = TRUE)
@@ -108,15 +114,34 @@ age_comparison_server <- function(id, data) {
       )
     })
     
+    # Validate and limit item selection to 4
+    observeEvent(input$item_select, {
+      if (length(input$item_select) > 4) {
+        updateSelectInput(
+          session,
+          "item_select",
+          selected = input$item_select[1:4]
+        )
+        showNotification(
+          "Maximum 4 items allowed. Keeping first 4 selections.",
+          type = "warning",
+          duration = 3
+        )
+      }
+    })
+    
     # Filter data
     filtered_data <- reactive({
       req(input$item_select)
-      req(length(input$gender_filter) > 0)
+      req(length(input$item_select) > 0)
+      
+      # Parse gender selection
+      gender_info <- parse_gender_selection(input$gender_filter)
       
       data |>
         filter(
           clean_item_name %in% input$item_select,
-          gender_clean %in% input$gender_filter,
+          gender_clean %in% gender_info$genders,
           age_num >= input$age_range[1],
           age_num <= input$age_range[2]
         )
@@ -126,13 +151,25 @@ age_comparison_server <- function(id, data) {
     trend_data <- reactive({
       req(nrow(filtered_data()) > 0)
       
-      compute_age_trends_multi(
-        filtered_data(),
-        data,
-        input$item_select,
-        input$gender_filter,
-        input$age_range
-      )
+      gender_info <- parse_gender_selection(input$gender_filter)
+      
+      # Use different function for combined vs separated
+      if (input$gender_filter == "both_combined") {
+        compute_age_trends_combined(
+          filtered_data(),
+          data,
+          input$item_select,
+          input$age_range
+        )
+      } else {
+        compute_age_trends_multi(
+          filtered_data(),
+          data,
+          input$item_select,
+          gender_info$genders,
+          input$age_range
+        )
+      }
     })
     
     # Render main plot
@@ -142,8 +179,8 @@ age_comparison_server <- function(id, data) {
       plot_age_trends_enhanced(
         trend_data(),
         view_mode = input$view_mode,
-        line_size = input$line_size,
-        selected_genders = input$gender_filter
+        show_points = input$show_points,
+        gender_mode = input$gender_filter
       )
     })
     
@@ -151,7 +188,7 @@ age_comparison_server <- function(id, data) {
     output$summary_table <- renderTable({
       req(nrow(trend_data()) > 0)
       
-      compute_trend_summary(trend_data())
+      compute_trend_summary(trend_data(), input$gender_filter)
     }, striped = TRUE, hover = TRUE, bordered = TRUE)
   })
 }

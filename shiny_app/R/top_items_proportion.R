@@ -8,43 +8,36 @@
 top_items_proportion_ui <- function(id) {
   ns <- NS(id)
   
-  tabPanel("Top Items Proportion",
+  tabPanel("Top Items",
            sidebarLayout(
              sidebarPanel(
-               checkboxGroupInput(
+               selectInput(
                  ns("gender_filter"),
                  "Select Gender:",
-                 choices = c("boy", "girl"),
-                 selected = c("boy", "girl")
-               ),
-               sliderInput(
-                 ns("age_range"),
-                 "Select Age Range:",
-                 min = 1,
-                 max = 100,
-                 value = c(1, 100),
-                 step = 1
+                 choices = c(
+                   "Boys Only" = "boy",
+                   "Girls Only" = "girl",
+                   "Boys & Girls (Separated)" = "both_separate",
+                   "Boys & Girls (Combined)" = "both_combined"
+                 ),
+                 selected = "both_combined"
                ),
                sliderInput(
                  ns("top_n"),
-                 "Top N items to show:",
+                 "Number of Top Items to Show:",
                  min = 5,
                  max = 40,
                  value = 10,
                  step = 1
                ),
-               hr(),
-               radioButtons(
-                 ns("color_by"),
-                 "Color bars by:",
-                 choices = c(
-                   "Single Color" = "single",
-                   "By Gender" = "gender"
-                 ),
-                 selected = "single"
-               ),
-               hr(),
-               helpText("Shows the proportion of participants who collect each item.")
+               sliderInput(
+                 ns("age_range"),
+                 "Age Range:",
+                 min = 1,
+                 max = 100,
+                 value = c(1, 100),
+                 step = 1
+               )
              ),
              mainPanel(
                plotOutput(ns("bar_plot"), height = "600px")
@@ -55,7 +48,6 @@ top_items_proportion_ui <- function(id) {
 top_items_proportion_server <- function(id, data) {
   moduleServer(id, function(input, output, session) {
     
-    # Update age range slider based on actual data
     observe({
       min_age <- min(data$age_num, na.rm = TRUE)
       max_age <- max(data$age_num, na.rm = TRUE)
@@ -68,26 +60,39 @@ top_items_proportion_server <- function(id, data) {
       )
     })
     
-    # Filter data based on user selections
     filtered <- reactive({
-      filter_checklist(data, input$gender_filter, input$age_range)
-    })
-    
-    # Compute summary statistics
-    summary <- reactive({
-      filtered() |>
-        count_by_item() |>
-        slice_max(percent, n = input$top_n)
-    })
-    
-    # Render plot
-    output$bar_plot <- renderPlot({
-      req(nrow(summary()) > 0)
+      # Determine which genders to include
+      genders <- if (input$gender_filter %in% c("boy", "girl")) {
+        input$gender_filter
+      } else {
+        c("boy", "girl")
+      }
       
-      if (input$color_by == "gender") {
+      filter_checklist(data, genders, input$age_range)
+    })
+    
+    output$bar_plot <- renderPlot({
+      req(nrow(filtered()) > 0)
+      if (input$gender_filter == "both_separate") {
         plot_top_items_by_gender(filtered(), input$top_n)
       } else {
-        plot_top_items(summary())
+        summary <- filtered() |> 
+          count_by_item() |> 
+          slice_max(percent, n = input$top_n)
+        title <- switch(
+          input$gender_filter,
+          "boy"  = "Top Collected Items – Boys",
+          "girl" = "Top Collected Items – Girls",
+          "both_combined" = "Top Collected Items"
+        )
+        color <- switch(
+          input$gender_filter,
+          "boy"  = "#0D677C",
+          "girl" = "#C06C84",
+          "both_combined" = "#4A90E2"
+        )
+        
+        plot_top_items(summary, title, color)
       }
     })
   })

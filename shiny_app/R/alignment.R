@@ -15,10 +15,6 @@ alignment_ui <- function(id) {
                            min = 5, max = 40, value = 10, step = 1)
              ),
              mainPanel(
-               fluidRow(
-                 column(6, textOutput(ns("n_boys"))),
-                 column(6, textOutput(ns("n_girls")))
-               ),
                plotOutput(ns("alignmentPlot"), height = "800px")
              )
            ))
@@ -35,27 +31,20 @@ alignment_server <- function(id, data) {
       get_top_items_by_gender(df_props(), input$n_items_align)
     })
     
+    totals <- reactive({
+      count_participants_by_gender(data)
+    })
+    
     output$alignmentPlot <- renderPlot({
       df <- top_items()
       boys_df <- df |> filter(gender_clean == "boy")
       girls_df <- df |> filter(gender_clean == "girl")
       shared_df <- join_shared_items(boys_df, girls_df)
       
-      plot_alignment(boys_df, girls_df, shared_df)
-    })
-    
-    totals <- reactive({
-      count_participants_by_gender(data)
-    })
-    
-    output$n_boys <- renderText({
-      paste0("n (Boys) = ",
-             totals() |> filter(gender_clean == "boy") |> pull(total))
-    })
-    
-    output$n_girls <- renderText({
-      paste0("n (Girls) = ",
-             totals() |> filter(gender_clean == "girl") |> pull(total))
+      n_boys <- totals() |> filter(gender_clean == "boy") |> pull(total)
+      n_girls <- totals() |> filter(gender_clean == "girl") |> pull(total)
+      
+      plot_alignment_ranked(boys_df, girls_df, shared_df, n_boys, n_girls)
     })
   })
 }

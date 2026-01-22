@@ -1,8 +1,8 @@
 # ============================================================================
 # FILE: R/interest.R
-# PURPOSE: Interest profile visualization for freelist collections
-# DESCRIPTION: Line plot showing mean interest ratings across four dimensions 
-#              (learning, curious, talking, playing) for selected collections
+# PURPOSE: Interest profiles for freelist collections with dictionary grouping
+# DESCRIPTION: Line plot showing mean interest ratings with options to view
+#              by individual items or grouped by dictionary categories
 # ============================================================================
 
 interest_ui <- function(id) {
@@ -12,20 +12,60 @@ interest_ui <- function(id) {
     "Interest Profiles",
     sidebarLayout(
       sidebarPanel(
-        selectInput(ns("collection"), "Select Collection:", choices = NULL),
-        sliderInput(ns("age_range"), "Age Range:", 
-                    min = 1, max = 18, value = c(1, 18)),
-        checkboxGroupInput(
-          ns("gender"),
-          "Gender:",
-          choices = c("boy", "girl"),
-          selected = c("boy", "girl")
+        radioButtons(
+          ns("selection_type"),
+          "View By:",
+          choices = c(
+            "Individual Item" = "item",
+            "Category" = "category",
+            "Object Type" = "object_type",
+            "Taxonomic Content" = "taxonomic_content",
+            "Animal-Related" = "animal_related",
+            "Fiction-Related" = "fiction_related"
+          ),
+          selected = "item"
         ),
+        
+        selectInput(
+          ns("selection"),
+          "Select:",
+          choices = NULL
+        ),
+        
         hr(),
+        
+        sliderInput(
+          ns("age_range"),
+          "Age Range:",
+          min = 1,
+          max = 18,
+          value = c(1, 18)
+        ),
+        
+        selectInput(
+          ns("gender_filter"),
+          "Select Gender:",
+          choices = c(
+            "Boys Only" = "boy",
+            "Girls Only" = "girl",
+            "Boys & Girls (Separated)" = "both_separate",
+            "Boys & Girls (Combined)" = "both_combined"
+          ),
+          selected = "both_combined"
+        ),
+        
+        hr(),
+        
         textOutput(ns("sample_size"))
       ),
       mainPanel(
-        plotOutput(ns("interest_plot"), height = "400px")
+        plotOutput(ns("interest_plot"), height = "400px"),
+        
+        wellPanel(
+          style = "background-color: #f8f9fa; border: 1px solid #dee2e6; margin-top: 20px;",
+          h4("Items Included", style = "font-weight: bold; color: #495057;"),
+          textOutput(ns("items_included"))
+        )
       )
     )
   )
@@ -34,21 +74,8 @@ interest_ui <- function(id) {
 interest_server <- function(id, freelist_long_data) {
   moduleServer(id, function(input, output, session) {
     
-    # Update UI inputs based on data
+    # Update age range based on data
     observe({
-      collections <- freelist_long_data |>
-        filter(!is.na(collection_name_matched)) |>
-        pull(collection_name_matched) |>
-        unique() |>
-        sort()
-      
-      updateSelectInput(
-        session,
-        "collection",
-        choices = collections,
-        selected = collections[1]
-      )
-      
       updateSliderInput(
         session,
         "age_range",
@@ -59,27 +86,78 @@ interest_server <- function(id, freelist_long_data) {
       )
     })
     
-    # Compute summary statistics
-    summary <- reactive({
-      req(input$collection)
-      compute_interest_summary(
-        freelist_long_data,
-        input$collection,
-        input$gender,
-        input$age_range
+    # Update selection dropdown based on selection type
+    observe({
+      choices <- get_selection_choices(freelist_long_data, input$selection_type)
+      
+      updateSelectInput(
+        session,
+        "selection",
+        label = get_selection_label(input$selection_type),
+        choices = choices,
+        selected = choices[1]
       )
     })
     
-    # Display sample size
-    output$sample_size <- renderText({
-      n <- summary() |> pull(n) |> first()
-      paste0("Sample size: n = ", n)
+    # Compute summary based on selection type
+    summary <- reactive({
+      req(input$selection)
+      
+      gender_info <- parse_gender_selection(input$gender_filter)
+      
+      if (input$selection_type == "item") {
+        # Individual item
+        compute_interest_summary_item(
+          freelist_long_data,
+          input$selection,
+          gender_info$genders,
+          input$age_range,
+          input$gender_filter
+        )
+      } else {
+        # Grouped by dictionary field
+        compute_interest_summary_grouped(
+          freelist_long_data,
+          input$selection_type,
+          input$selection,
+          gender_info$genders,
+          input$age_range,
+          input$gender_filter
+        )
+      }
+    })
+    
+    # Get items included in selection
+    items_list <- reactive({
+      req(input$selection)
+      
+      if (input$selection_type == "item") {
+        input$selection
+      } else {
+        get_items_in_group(freelist_long_data, input$selection_type, input$selection)
+      }
+    })
+    
+    # Display items included
+    output$items_included <- renderText({
+      items <- items_list()
+      if (length(items) == 1) {
+        paste0("Showing: ", items)
+      } else {
+        paste0("Showing ", length(items), " items: ", paste(items, collapse = ", "))
+      }
     })
     
     # Render plot
     output$interest_plot <- renderPlot({
       req(nrow(summary()) > 0)
-      plot_interest_profile(summary(), input$collection)
+      
+      plot_interest_profile_enhanced(
+        summary(),
+        input$selection,
+        input$selection_type,
+        input$gender_filter
+      )
     })
   })
 }
