@@ -18,13 +18,13 @@ age_comparison_ui <- function(id) {
                       
                       selectInput(
                         ns("item_select"),
-                        "Select Items to Compare (max 4):",
+                        "Select Items to Compare:",
                         choices = NULL,
                         multiple = TRUE,
                         selectize = TRUE
                       ),
                       
-                      helpText("Select 1-4 items to compare age trends"),
+                      helpText("Select items to compare age trends"),
                       
                       hr(),
                       
@@ -112,22 +112,6 @@ age_comparison_server <- function(id, data) {
         max = max_age,
         value = c(min_age, max_age)
       )
-    })
-    
-    # Validate and limit item selection to 4
-    observeEvent(input$item_select, {
-      if (length(input$item_select) > 4) {
-        updateSelectInput(
-          session,
-          "item_select",
-          selected = input$item_select[1:4]
-        )
-        showNotification(
-          "Maximum 4 items allowed. Keeping first 4 selections.",
-          type = "warning",
-          duration = 3
-        )
-      }
     })
     
     # Filter data

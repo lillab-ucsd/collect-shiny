@@ -17,8 +17,9 @@ interest_ui <- function(id) {
           "View By:",
           choices = c(
             "Individual Item" = "item",
-            "Category" = "category",
             "Object Type" = "object_type",
+            "Category" = "category",
+            "Natural" = "natural",
             "Taxonomic Content" = "taxonomic_content",
             "Animal-Related" = "animal_related",
             "Fiction-Related" = "fiction_related"
@@ -53,8 +54,6 @@ interest_ui <- function(id) {
           ),
           selected = "both_combined"
         ),
-        
-        hr(),
         
         textOutput(ns("sample_size"))
       ),

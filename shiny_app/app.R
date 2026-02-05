@@ -4,6 +4,7 @@ library(here)
 library(ggforce)
 library(ggrepel)
 library(reactable)
+library(patchwork)
 
 # Source helper and module files
 source("R/helpers.R")
