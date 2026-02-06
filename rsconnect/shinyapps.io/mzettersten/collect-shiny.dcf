@@ -1,0 +1,12 @@
+name: collect-shiny
+title: collect-shiny
+username: mzettersten
+account: mzettersten
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8589426
+bundleId: 11543893
+url: https://mzettersten.shinyapps.io/collect-shiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
