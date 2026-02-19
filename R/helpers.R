@@ -94,7 +94,7 @@ plot_top_items_by_gender <- function(data, n_items) {
   # Get top N items overall (regardless of gender)
   top_items <- data |>
     count_by_item() |>
-    slice_max(percent, n = n_items) |>
+    slice_max(percent, n = n_items, with_ties = FALSE) |>
     pull(clean_item_name)
   
   # Filter to just those top items
@@ -351,27 +351,19 @@ plot_age_trends_enhanced <- function(df, view_mode, show_points, gender_mode) {
     # All items on one plot
     if (show_gender) {
       # Show different colors for each item, facet by gender instead of linetype
-      p <- ggplot(df, aes(x = age_num, y = percent, 
-                          color = clean_item_name, 
-                          group = clean_item_name))
+      p <- ggplot(df, aes(x = age_num, y = percent, color = clean_item_name, group = clean_item_name))
     } else {
       # Just show different colors for each item
-      p <- ggplot(df, aes(x = age_num, y = percent, 
-                          color = clean_item_name, 
-                          group = clean_item_name))
+      p <- ggplot(df, aes(x = age_num, y = percent, color = clean_item_name, group = clean_item_name))
     }
   } else {
     # Separate panel for each item (facet_item)
     if (show_gender) {
       # Within each item panel, show boy/girl lines
-      p <- ggplot(df, aes(x = age_num, y = percent, 
-                          color = gender_clean, 
-                          group = gender_clean))
+      p <- ggplot(df, aes(x = age_num, y = percent, color = gender_clean, group = gender_clean))
     } else {
       # Single line per item panel - color by gender_clean which will be boy, girl, or combined
-      p <- ggplot(df, aes(x = age_num, y = percent, 
-                          color = gender_clean, 
-                          group = 1))
+      p <- ggplot(df, aes(x = age_num, y = percent, color = gender_clean, group = 1))
     }
   }
   
@@ -389,7 +381,16 @@ plot_age_trends_enhanced <- function(df, view_mode, show_points, gender_mode) {
     p <- p + scale_color_viridis_d(option = "D", name = "Item")
   } else {
     # facet_item mode - always color by gender (boy, girl, or combined)
-    p <- p + scale_color_manual(values = gender_colors, name = "Gender", guide = "none")
+    # Show legend when gender is separated
+    if (show_gender) {
+      p <- p + scale_color_manual(
+        values = gender_colors, 
+        name = "Gender",
+        labels = c("boy" = "Boys", "girl" = "Girls")
+      )
+    } else {
+      p <- p + scale_color_manual(values = gender_colors, name = "Gender", guide = "none")
+    }
   }
   
   # Add facets if needed
@@ -397,12 +398,11 @@ plot_age_trends_enhanced <- function(df, view_mode, show_points, gender_mode) {
     p <- p + facet_wrap(~clean_item_name, ncol = 2)
   } else if (view_mode == "together" && show_gender) {
     # When showing all items together with gender separation, facet by gender
-    p <- p + facet_wrap(~gender_clean, ncol = 2,
-                        labeller = labeller(gender_clean = c("boy" = "Boys", "girl" = "Girls")))
+    p <- p + facet_wrap(~gender_clean, ncol = 2, labeller = labeller(gender_clean = c("boy" = "Boys", "girl" = "Girls")))
   }
   
   # Theme and labels
-  p <- p +
+  p <- p + 
     labs(
       title = "Age Trends Comparison",
       x = "Age",

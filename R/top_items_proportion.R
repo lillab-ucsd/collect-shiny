@@ -28,14 +28,14 @@ top_items_proportion_ui <- function(id) {
                  min = 5,
                  max = 40,
                  value = 10,
-                 step = 1
+                 step = 5
                ),
                sliderInput(
                  ns("age_range"),
                  "Age Range:",
                  min = 1,
-                 max = 100,
-                 value = c(1, 100),
+                 max = 18,
+                 value = c(1, 18),
                  step = 1
                )
              ),

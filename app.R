@@ -5,6 +5,7 @@ library(ggforce)
 library(ggrepel)
 library(reactable)
 library(patchwork)
+library(shinyWidgets)
 
 # Source helper and module files
 source("R/helpers.R")
